@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 export default function Footer() {
   return (
     <>
@@ -108,6 +106,19 @@ export default function Footer() {
                     />
                   </a>
                 </div>
+                <a
+                  href='https://twitter.com/vn_inspect'
+                  className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Twitter'
+                >
+                  <img
+                    className='w-full h-full rounded-full object-cover'
+                    src={require('../../../assets/img/icon/12.png')}
+                    alt='twitter'
+                  />
+                </a>
               </div>
             </div>
             <div className='w-full lg:w-6/12 px-4'>
@@ -148,18 +159,15 @@ export default function Footer() {
           <div className='flex flex-wrap items-center md:justify-between justify-center'>
             <div className='w-full md:w-4/12 px-4 mx-auto text-center'>
               <div className='text-sm text-slate-400 font-semibold py-1'>
-                Copyright © {new Date().getFullYear()}{' '}
                 <a
                   href='https://vninspect.com'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='text-slate-100 hover:text-slate-200'
                 >
-                  VN INSPECTION TEAM
+                  Vietnam Inspection Team
                 </a>
-                .
               </div>
-              <Link to={'/home'} className='text-slate-50'>vninspect.com</Link>
             </div>
           </div>
         </div>

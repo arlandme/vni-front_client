@@ -14,7 +14,7 @@ export default function WhyUs() {
               <div className='font-semibold text-center text-xl text-emerald-500'>
                 Professional and experienced local inspectors
               </div>
-              <ul className='list-disc ml-4'>
+              <ul className=''>
                 <li className='text-left italic'>
                   Our team members who have worked in famous inspection service
                   companies specialize in hardlines, softlines and E&E.
@@ -32,7 +32,7 @@ export default function WhyUs() {
               <div className='font-semibold text-center text-xl text-emerald-500'>
                 Good price, good services
               </div>
-              <ul className='list-disc ml-4'>
+              <ul className=''>
                 <li className='text-left italic mb-2'>
                   Inspectors work professionally, precisely and swiftly.
                 </li>
@@ -53,7 +53,7 @@ export default function WhyUs() {
               <div className='font-semibold text-xl text-emerald-500'>
                 Powerful report
               </div>
-              <ul className='list-disc ml-4'>
+              <ul className=''>
                 <li className='text-left italic mb-2'>
                   Clients receive report within 12 hours after inspection
                   finishes.

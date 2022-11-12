@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const NavbarServicesDropdown = ({ services }) => {
+const NavbarServicesDropdown = ({ url, services }) => {
 
   return (
     <div className='group relative'>
@@ -14,7 +14,7 @@ const NavbarServicesDropdown = ({ services }) => {
       </div>
       <div
         className={
-          'group-hover:block hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 absolute'
+          'group-hover:block hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg w-[16rem] absolute'
         }
       >
         {services &&
@@ -23,7 +23,10 @@ const NavbarServicesDropdown = ({ services }) => {
               key={item.id}
               to={'/services/' + item.path}
               className={
-                'text-md py-4 px-4 font-medium block w-full whitespace-nowrap bg-transparent text-slate-500 hover:text-emerald-500 hover:bg-emerald-50 transition'
+                'text-md py-4 px-4 font-medium block w-full bg-transparent text-slate-500 hover:text-emerald-500 hover:bg-emerald-100 transition ' +
+                (url?.indexOf(item.path) !== -1
+                  ? '!text-emerald-500 bg-emerald-100'
+                  : '')
               }
             >
               {item.title}

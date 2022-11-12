@@ -73,7 +73,7 @@ export default function Sidebar({ products }) {
         <div className='pt-4 pb-6 border-b-2 border-emerald-600'>
           <a
             href='tel:0979702787'
-            className='py-4 px-6 bg-emerald-400 inline-flex items-center gap-2 justify-center w-full text-lg font-semibold text-slate-50 hover:bg-emerald-500 hover:text-white transition rounded mb-4'
+            className='py-4 px-6 bg-emerald-500 inline-flex items-center gap-2 justify-center w-full text-lg font-semibold text-slate-50 hover:bg-emerald-600/80 hover:text-white transition rounded mb-4'
           >
             <i className='fa-solid fa-circle-phone text-3xl'></i> +84 97 970
             2787
@@ -189,7 +189,7 @@ export default function Sidebar({ products }) {
 
             <button
               type='submit'
-              className={'text-slate-50 py-2 px-6 mt-4 w-full font-semibold text-lg rounded hover:text-white transition bg-emerald-400 hover:bg-emerald-500'}
+              className={'text-slate-50 py-2 px-6 mt-4 w-full font-semibold text-lg rounded hover:text-white transition bg-emerald-500 hover:bg-emerald-600/80'}
               onClick={handleSubmit}
             >
               Contact Us

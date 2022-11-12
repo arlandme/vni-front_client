@@ -1,12 +1,20 @@
 /*eslint-disable*/
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 // components
 import DesktopNavbar from './DesktopNavbar';
 import MobileNavbar from './MobileNavbar';
 
-export default function Navbar({services, products}) {
+export default function Navbar({ services, products }) {
+  const location = useLocation();
+
+  const [url, setUrl] = useState();
+
+  useEffect(() => {
+    setUrl(location.pathname);
+  }, [location]);
+
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(() => {
     const width = window.innerWidth;
@@ -51,7 +59,7 @@ export default function Navbar({services, products}) {
               className=' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap'
               to='/'
             >
-              <img className='w-[200px]' src={require('../../../assets/img/logos/vninspection-high-resolution-logo-white-on-transparent-background.png')} alt='logo vninspection' />
+              <img className='w-[200px] object-cover' src={require('../../../assets/img/logos/logo.png')} alt='logo vninspection' />
               <div className='text-sm text-left text-slate-50 border-t mt-1 pt-1'>
                 Your Inspection Partner
               </div>
@@ -64,9 +72,9 @@ export default function Navbar({services, products}) {
               <i className=' fas fa-bars'></i>
             </button>
           </div>
-          {!isMobile && <DesktopNavbar services={services} products={products} />}
+          {!isMobile && <DesktopNavbar url={url} services={services} products={products} />}
         </div>
-        {isMobile && <MobileNavbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} services={services} products={products} />}
+        {isMobile && <MobileNavbar url={url} navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} services={services} products={products} />}
       </nav>
     </>
   );

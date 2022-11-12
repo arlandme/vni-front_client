@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 
 export default function App() {
   useEffect(() => {
-    document.title = 'VN Inspection Team – Your Inspection Partner';
+    document.title = 'Vietnam Inspection Services';
   }, []);
 
   return (
