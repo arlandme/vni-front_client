@@ -15,6 +15,7 @@ export default function WhyUs() {
                 Professional and experienced local inspectors
               </div>
               <ul className=''>
+                <li className='text-left italic mb-2'>Qualified with ISO 17020:2012 and ISO 9001:2015 certificate.</li>
                 <li className='text-left italic'>
                   Our team members who have worked in famous inspection service
                   companies specialize in hardlines, softlines and E&E.
