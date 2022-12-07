@@ -1,9 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700');
+@font-face {
+  font-family: 'primary';
+  src: url('../fonts/font-family/primary/primary.ttf');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/font-family/orbitron/Orbitron.ttf');
+}
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'primary', sans-serif;
+}
+
+.slogan {
+  font-family: 'Orbitron', sans-serif;
 }

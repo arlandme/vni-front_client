@@ -148,14 +148,17 @@ export default function Footer() {
             </div>
             <div className='w-full lg:w-6/12 px-4'>
               <div className='flex flex-wrap items-top mb-6 justify-end'>
-                <div className='w-full lg:w-5/12 px-4'>
+                <div className='w-full lg:w-8/12 px-4'>
                   <span className='block uppercase text-slate-400 text-sm font-semibold mb-2'>
                     Contact
                   </span>
                   <ul className='list-unstyled'>
-                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold lg:justify-start justify-center'>
-                      <i className='fa-solid fa-house'></i>
-                      <span className='py-2'>Hanoi and Hung Yen</span>
+                    <li className='text-slate-100 flex items-start gap-2 text-sm font-semibold lg:justify-start justify-center'>
+                      <i className='fa-solid fa-house py-1'></i>
+                      <div>
+                        <div className='mb-2'>Hanoi: No. 17, Quarter Den Lu 3, Hoang Van Thu Ward, Hoang Mai District, Hanoi city, Vietnam</div>
+                        <div>Hung Yen: No. 5, Phu Lam Hamlet, An Vi Commune, Khoai Chau District, Hung Yen Province, Vietnam</div>
+                      </div>
                     </li>
                     <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold lg:justify-start justify-center'>
                       <i className='fa-solid fa-envelope'></i>

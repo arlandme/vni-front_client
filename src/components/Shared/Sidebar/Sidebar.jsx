@@ -5,7 +5,7 @@ import { informationValidator } from '../../../utils/validation';
 import Toast from '../Toasts/Toast';
 import SuggestLink from '../Suggests/SuggestLink';
 
-export default function Sidebar({ products, data }) {
+export default function Sidebar({ products, services, data }) {
   const [messages, setMessages] = useState([]);
   const [showToast, setShowToast] = useState(false);
   const [toastStatus, setToastStatus] = useState(false);
@@ -203,7 +203,9 @@ export default function Sidebar({ products, data }) {
             </button>
           </form>
         </div>
-        <SuggestLink data={products} single={data} />
+        <div className='hidden lg:block'>
+          <SuggestLink data={services || products} single={data} />
+        </div>
       </div>
     </>
   );

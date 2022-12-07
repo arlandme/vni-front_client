@@ -34,7 +34,7 @@ export default function Service() {
       </HelmetProvider>
       <div className='flex flex-wrap lg:container mx-auto lg:px-6 px-4 py-6 relative'>
         <Main data={data} services={services} />
-        <Sidebar products={products} data={data} />
+        <Sidebar products={products} services={services} data={data} />
       </div>
     </>
   );

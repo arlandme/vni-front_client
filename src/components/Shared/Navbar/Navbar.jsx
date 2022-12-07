@@ -64,7 +64,7 @@ export default function Navbar({ services, products }) {
                 src={require('../../../assets/img/logos/logo.png')}
                 alt='logo vninspection'
               />
-              <div className='text-sm text-left text-slate-50 border-t mt-1 pt-1'>
+              <div className='slogan text-sm text-left text-slate-50 border-t mt-1 pt-1'>
                 Your Inspection Partner
               </div>
             </Link>

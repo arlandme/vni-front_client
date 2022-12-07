@@ -27,7 +27,7 @@ export default function Layout() {
       name: ''
     }).then(res => setProducts(res));
   }, []);
-
+  
   return (
     <>
       <Navbar transparent services={services} products={products} />

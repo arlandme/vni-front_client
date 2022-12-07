@@ -3,7 +3,7 @@ import NavbarProductsDropdown from '../Dropdowns/NavbarProductsDropdown';
 import NavbarServicesDropdown from '../Dropdowns/NavbarServicesDropdown';
 
 export default function DesktopNavbar({ url, services, products }) {
-
+  console.log(services);
   return (
     <>
       <div
