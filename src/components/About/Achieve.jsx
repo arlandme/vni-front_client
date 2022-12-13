@@ -23,7 +23,7 @@ export default function Achieve() {
             </div>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Professional, qualified and experienced local inspectors
+                Professional, qualified, experienced and local inspectors
               </div>
             </div>
           </div>
