@@ -112,7 +112,7 @@ export default function Achieve() {
             </div>
             <div className='w-1/2'>
               {/* <div className='font-bold text-2xl text-emerald-500'>
-                Professional, qualified and experienced local inspectors
+                Professional, qualified, experienced and local inspectors
               </div> */}
               <div className='flex flex-col gap-1 text-left italic'>
                 <div className='flex items-start gap-2 pl-4'>
@@ -544,7 +544,7 @@ export default function Achieve() {
           </div>
           <div>
             <div className='font-bold text-2xl text-amber-500'>
-              Professional, qualified and experienced local inspectors
+              Professional, qualified, experienced and local inspectors
             </div>
             <div className='flex flex-col gap-1 text-left italic'>
               <div className='flex items-start gap-2 pl-4'>
