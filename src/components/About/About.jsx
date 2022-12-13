@@ -14,7 +14,7 @@ export default function About() {
             as strictly and systematically control product quality based on objectivity, transparency and accuracy.
           </p>
           <p className='pb-4'>
-            With a team of professional, qualified, experienced inspectors, we
+            With a team of professional, qualified and experienced inspectors, we
             provide our customers with the best quality control solution in
             every service and can do the full inspection services: Initial
             production check (IPC), During production check (DUPRO),
