@@ -174,7 +174,7 @@ export default function Achieve() {
                       <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
                     </svg>
                   </div>
-                  <div>Objectivity & Transparency</div>
+                  <div>Objectivity and Transparency</div>
                 </div>
                 <div className='flex items-center gap-2 pl-4'>
                   <div>
@@ -189,7 +189,7 @@ export default function Achieve() {
                       <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
                     </svg>
                   </div>
-                  <div>Precision & Integrity</div>
+                  <div>Precision and Integrity</div>
                 </div>
                 <div className='flex items-center gap-2 pl-4'>
                   <div>
@@ -204,7 +204,7 @@ export default function Achieve() {
                       <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
                     </svg>
                   </div>
-                  <div>Respect & Gratitude</div>
+                  <div>Respect and Gratitude</div>
                 </div>
               </div>
             </div>
@@ -466,7 +466,7 @@ export default function Achieve() {
                     <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
                   </svg>
                 </div>
-                <div>Objectivity & Transparency</div>
+                <div>Objectivity and Transparency</div>
               </div>
               <div className='flex items-center gap-2 pl-4'>
                 <div>
@@ -481,7 +481,7 @@ export default function Achieve() {
                     <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
                   </svg>
                 </div>
-                <div>Precision & Integrity</div>
+                <div>Precision and Integrity</div>
               </div>
               <div className='flex items-center gap-2 pl-4'>
                 <div>
@@ -496,7 +496,7 @@ export default function Achieve() {
                     <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
                   </svg>
                 </div>
-                <div>Respect & Gratitude</div>
+                <div>Respect and Gratitude</div>
               </div>
             </div>
           </div>
