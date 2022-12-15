@@ -23,7 +23,7 @@ export default function Achieve() {
             </div>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Professional, qualified, experienced and local inspectors
+                Excellent inspectors
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function Achieve() {
             </div>
             <div className='w-1/2'>
               {/* <div className='font-bold text-2xl text-emerald-500'>
-                Professional, qualified, experienced and local inspectors
+                Excellent inspectors
               </div> */}
               <div className='flex flex-col gap-1 text-left italic'>
                 <div className='flex items-start gap-2 pl-4'>
@@ -544,8 +544,10 @@ export default function Achieve() {
           </div>
           <div>
             <div className='font-bold text-2xl text-amber-500'>
-              Professional, qualified, experienced and local inspectors
+              Excellent inspectors
             </div>
+            <div className='flex flex-col gap-1 text-left italic'>
+              <div className='flex items-start gap-2 pl-4'>
                 <div className='mt-[4px]'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -559,7 +561,26 @@ export default function Achieve() {
                   </svg>
                 </div>
                 <div>
-                  Our inspectors who are qualified with ISO 17020:2012 and ISO 9001:2015 specialize in hardline, softline and Electrical & Electronics. Inspectors of Vietnam Inspection Team have worked in famous inspection service companies (Intertek, SGS, Bureau Veritas and Qima), quality control and inspection skills are always trained and improved.
+                  Inspectors are qualified with ISO 17020:2012 and ISO 9001:2015
+                </div>
+              </div>
+              <div className='flex items-start gap-2 pl-4'>
+                <div className='mt-[4px]'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='16'
+                    height='16'
+                    fill='currentColor'
+                    className='bi bi-check2'
+                    viewBox='0 0 16 16'
+                  >
+                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
+                  </svg>
+                </div>
+                <div>
+                  Our teammates who specialize in hardline, softline and
+                  Electrical & Electronics have worked in famous inspection
+                  service companies (Intertek, SGS, Bureau Veritas and Qima)
                 </div>
               </div>
             </div>
