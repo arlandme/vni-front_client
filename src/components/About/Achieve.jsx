@@ -113,8 +113,7 @@ export default function Achieve() {
                 <div>
                   We have our own reports for all product categories. We follow
                   customers’ requirements and customize our reports based on
-                  customers’ needs. Our inspectors have smart tools for
-                  inserting photos into reports. Due to being able to process
+                  customers’ needs. Due to being able to process
                   huge inspection information, we always try to inspect as much
                   as possible to take the most details about products. After
                   inspection completes, customers will receive our reports
@@ -209,8 +208,7 @@ export default function Achieve() {
               <div>
                 We have our own reports for all product categories. We follow
                 customers’ requirements and customize our reports based on
-                customers’ needs. Our inspectors have smart tools for inserting
-                photos into reports. Due to being able to process huge
+                customers’ needs. Due to being able to process huge
                 inspection information, we always try to inspect as much as
                 possible to take the most details about products. After
                 inspection completes, customers will receive our reports within
