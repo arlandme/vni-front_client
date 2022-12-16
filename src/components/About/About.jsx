@@ -22,7 +22,8 @@ export default function About() {
             Sample drawing (SD) and Full Inspection (FI).
           </p>
           <p className=''>
-            The Vietnam Inspection Team is a perfect choice for quality control.
+            The Vietnam Inspection Team is a perfect choice for quality control
+            and the best partner of inspection service companies.
           </p>
         </div>
         <div>
