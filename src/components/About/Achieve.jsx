@@ -64,7 +64,7 @@ export default function Achieve() {
           <div className='flex gap-6 mb-6'>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Our vision
+                Our Vision
               </div>
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
@@ -93,7 +93,7 @@ export default function Achieve() {
           <div className='flex gap-6'>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Our values
+                Our Values
               </div>
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
