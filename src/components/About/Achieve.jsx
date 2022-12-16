@@ -38,7 +38,7 @@ export default function Achieve() {
                   as raise brand awareness. Our mission is to be a companion of
                   customers in the process of brand development. Vietnam 
                   Inspection Team helps customers manufacture high-quality 
-                  products and we are one of the best partners of inspection 
+                  products and become one of the best partners of inspection 
                   service companies in Vietnam.
                 </div>
                 <div></div>
@@ -137,7 +137,7 @@ export default function Achieve() {
                 as raise brand awareness. Our mission is to be a companion of
                 customers in the process of brand development. Vietnam 
                 Inspection Team helps customers manufacture high-quality 
-                products and we are one of the best partners of inspection 
+                products and become one of the best partners of inspection 
                 service companies in Vietnam.
               </div>
               <div></div>
