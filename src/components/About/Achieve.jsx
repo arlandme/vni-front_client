@@ -41,7 +41,7 @@ export default function Achieve() {
                   products and we are one of the best partners of inspection 
                   service companies in Vietnam.
                 </div>
-                <div>Thêm ở đây</div>
+                <div></div>
               </div>
             </div>
             <div className='w-1/2'>
@@ -57,7 +57,7 @@ export default function Achieve() {
                   Veritas and Qima). Our quality control and inspection skills
                   are always trained and improved.
                 </div>
-                <div>Thêm </div>
+                <div></div>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Achieve() {
                   in Vietnam and create a definition “not only inexpensive price
                   but also high quality”.
                 </div>
-                <div>Thêm ở đây</div>
+                <div></div>
               </div>
             </div>
             <div className='w-1/2'>
@@ -86,7 +86,7 @@ export default function Achieve() {
                   To win customers’ satisfaction, Vietnam Inspection Team has
                   not only the best services but also the best price.
                 </div>
-                <div>Thêm </div>
+                <div></div>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Achieve() {
                   toward customers with Integrity, Respect and Gratitude for
                   sustainable development.
                 </div>
-                <div>Thêm </div>
+                <div></div>
               </div>
             </div>
             <div className='w-1/2'>
@@ -120,7 +120,7 @@ export default function Achieve() {
                   inspection completes, customers will receive our reports
                   within 12 hours and customer information is top secret.
                 </div>
-                <div>Thêm </div>
+                <div></div>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Achieve() {
                 products and we are one of the best partners of inspection 
                 service companies in Vietnam.
               </div>
-              <div>Thêm ở đây</div>
+              <div></div>
             </div>
           </div>
           <div>
@@ -152,7 +152,7 @@ export default function Achieve() {
                 Vietnam and create a definition “not only inexpensive price but
                 also high quality”.
               </div>
-              <div>Thêm ở đây</div>
+              <div></div>
             </div>
           </div>
           <div>
@@ -164,7 +164,7 @@ export default function Achieve() {
                 toward customers with Integrity, Respect and Gratitude for
                 sustainable development.
               </div>
-              <div>Thêm </div>
+              <div></div>
             </div>
           </div>
 
@@ -184,7 +184,7 @@ export default function Achieve() {
                 Veritas and Qima). Our quality control and inspection skills are
                 always trained and improved.
               </div>
-              <div>Thêm </div>
+              <div></div>
             </div>
           </div>
           <div>
@@ -198,7 +198,7 @@ export default function Achieve() {
                 To win customers’ satisfaction, Vietnam Inspection Team has not
                 only the best services but also the best price.
               </div>
-              <div>Thêm </div>
+              <div></div>
             </div>
           </div>
           <div>
@@ -216,7 +216,7 @@ export default function Achieve() {
                 inspection completes, customers will receive our reports within
                 12 hours and customer information is top secret.
               </div>
-              <div>Thêm </div>
+              <div></div>
             </div>
           </div>
         </div>
