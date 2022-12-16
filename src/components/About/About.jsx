@@ -4,10 +4,10 @@ export default function About() {
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
         <div>
           <div className='font-bold text-2xl text-emerald-500'>
-            About The Vietnam Inspection Team
+            About Vietnam Inspection Team
           </div>
           <p className='py-4'>
-            Established in the context of the global economic crisis, The
+            Established in the context of the global economic crisis, 
             Vietnam Inspection Team understands the difficulties in sales of
             customers and the delay in mass production of factories. We were
             born with the mission to help customers’ sales go smoothly as well
@@ -22,7 +22,7 @@ export default function About() {
             Sample drawing (SD) and Full Inspection (FI).
           </p>
           <p className=''>
-            The Vietnam Inspection Team is a perfect choice for quality control
+            Vietnam Inspection Team is a perfect choice for quality control
             and the best partner of inspection service companies.
           </p>
         </div>

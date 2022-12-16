@@ -6,19 +6,19 @@ export default function Achieve() {
           <div className='flex gap-6 pt-6 pb-8'>
             <div className='w-1/2'>
               <div className='font-bold text-center text-3xl text-emerald-500'>
-                Missions, Values and Visions
+                Our Mission, Vision and Values
               </div>
             </div>
             <div className='w-1/2'>
               <div className='font-bold text-center text-3xl text-emerald-500'>
-                Why us?
+                Why Us?
               </div>
             </div>
           </div>
           <div className='flex gap-6'>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Our mission
+                Our Mission
               </div>
             </div>
             <div className='w-1/2'>
@@ -30,7 +30,7 @@ export default function Achieve() {
           <div className='flex gap-6 mb-6'>
             <div className='w-1/2'>
               {/* <div className='font-bold text-2xl text-emerald-500'>
-                Our values
+                Our Values
               </div> */}
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
@@ -111,7 +111,7 @@ export default function Achieve() {
               </div>
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
-                  We have our own reports for all product categories. We follow
+                  Vietnam Inspection Team has our own reports for all product categories. We follow
                   customers’ requirements and customize our reports based on
                   customers’ needs. Due to being able to process
                   huge inspection information, we always try to inspect as much
@@ -128,9 +128,9 @@ export default function Achieve() {
         <div className='grid grid-cols-1 sm:hidden gap-4'>
           <div>
             <div className='font-bold text-center text-3xl text-emerald-500 pb-6'>
-              Missions, Values and Visions
+              Our Mission, Vision and Values
             </div>
-            <div className='font-bold text-2xl text-amber-500'>Our mission</div>
+            <div className='font-bold text-2xl text-amber-500'>Our Mission</div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
                 To focus on product quality that will bring good sales as well
@@ -144,7 +144,7 @@ export default function Achieve() {
             </div>
           </div>
           <div>
-            <div className='font-bold text-2xl text-amber-500'>Our vision</div>
+            <div className='font-bold text-2xl text-amber-500'>Our Vision</div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
                 To aim to be the most trustworthy inspection service provider in
@@ -155,7 +155,7 @@ export default function Achieve() {
             </div>
           </div>
           <div>
-            <div className='font-bold text-2xl text-amber-500'>Our values</div>
+            <div className='font-bold text-2xl text-amber-500'>Our Values</div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
                 Vietnam Inspection Team submits inspection result based on
@@ -168,7 +168,7 @@ export default function Achieve() {
           </div>
 
           <div className='font-bold text-center text-3xl text-emerald-500 py-6'>
-            Why us?
+            Why Us?
           </div>
           <div>
             <div className='font-bold text-2xl text-amber-500'>
@@ -206,7 +206,7 @@ export default function Achieve() {
             </div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
-                We have our own reports for all product categories. We follow
+                Vietnam Inspection Team has our own reports for all product categories. We follow
                 customers’ requirements and customize our reports based on
                 customers’ needs. Due to being able to process huge
                 inspection information, we always try to inspect as much as
