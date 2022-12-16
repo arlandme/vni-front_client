@@ -83,8 +83,8 @@ export default function Achieve() {
                 <div>
                   In Vietnam Inspection Team, working professionally, precisely
                   and swiftly is a mandatory element in sustainable development.
-                  To win customers’ satisfaction, Vietnam Inspection Team has
-                  not only the best services but also the best price.
+                  To win customers’ satisfaction, we have not only the best 
+                  services but also the best price.
                 </div>
                 <div></div>
               </div>
@@ -111,7 +111,7 @@ export default function Achieve() {
               </div>
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
-                  Vietnam Inspection Team has our own reports for all product categories. We follow
+                  Vietnam Inspection Team has its own reports for all product categories. We follow
                   customers’ requirements and customize our reports based on
                   customers’ needs. Due to being able to process
                   huge inspection information, we always try to inspect as much
@@ -194,8 +194,8 @@ export default function Achieve() {
               <div>
                 In Vietnam Inspection Team, working professionally, precisely
                 and swiftly is a mandatory element in sustainable development.
-                To win customers’ satisfaction, Vietnam Inspection Team has not
-                only the best services but also the best price.
+                To win customers’ satisfaction, we have not only the best 
+                services but also the best price.
               </div>
               <div></div>
             </div>
@@ -206,7 +206,7 @@ export default function Achieve() {
             </div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
-                Vietnam Inspection Team has our own reports for all product categories. We follow
+                Vietnam Inspection Team has its own reports for all product categories. We follow
                 customers’ requirements and customize our reports based on
                 customers’ needs. Due to being able to process huge
                 inspection information, we always try to inspect as much as
