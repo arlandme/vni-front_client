@@ -18,7 +18,7 @@ export default function Achieve() {
           <div className='flex gap-6'>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Our Missions
+                Our mission
               </div>
             </div>
             <div className='w-1/2'>
@@ -32,335 +32,95 @@ export default function Achieve() {
               {/* <div className='font-bold text-2xl text-emerald-500'>
                 Our values
               </div> */}
-              <div className='flex flex-col gap-1 text-left italic'>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Delete customers’ quality worry</div>
+              <div className='flex flex-col gap-2 text-left italic'>
+                <div>
+                  To focus on product quality that will bring good sales as well
+                  as raise brand awareness. Our mission is to be a companion of
+                  customers in the process of brand development. Vietnam 
+                  Inspection Team helps customers manufacture high-quality 
+                  products and we are one of the best partners of inspection 
+                  service companies in Vietnam.
                 </div>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Save customers’ money</div>
-                </div>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Help customers’ sales go smoothly</div>
-                </div>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Be customers’ reliable partner</div>
-                </div>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Always “kaizen” our services</div>
-                </div>
+                <div>Thêm ở đây</div>
               </div>
             </div>
             <div className='w-1/2'>
               {/* <div className='font-bold text-2xl text-emerald-500'>
                 Excellent inspectors
               </div> */}
-              <div className='flex flex-col gap-1 text-left italic'>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>
-                    Inspectors are qualified with ISO 17020:2012 and ISO
-                    9001:2015
-                  </div>
+              <div className='flex flex-col gap-2 text-left italic'>
+                <div>
+                  Our inspectors who are qualified with ISO 17020:2012 and ISO
+                  9001:2015 specialize in hardline, softline and Electrical &
+                  Electronics. Inspectors of Vietnam Inspection Team have worked
+                  in famous inspection service companies (Intertek, SGS, Bureau
+                  Veritas and Qima). Our quality control and inspection skills
+                  are always trained and improved.
                 </div>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>
-                    Our teammates who specialize in hardline, softline and
-                    Electrical & Electronics have worked in famous inspection
-                    service companies (Intertek, SGS, Bureau Veritas and Qima)
-                  </div>
-                </div>
+                <div>Thêm </div>
               </div>
             </div>
           </div>
           <div className='flex gap-6 mb-6'>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Our Values
+                Our vision
               </div>
-              <div className='flex flex-col gap-1 text-left italic'>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Objectivity and Transparency</div>
+              <div className='flex flex-col gap-2 text-left italic'>
+                <div>
+                  To aim to be the most trustworthy inspection service provider
+                  in Vietnam and create a definition “not only inexpensive price
+                  but also high quality”.
                 </div>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Precision and Integrity</div>
-                </div>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Respect and Gratitude</div>
-                </div>
-              </div>
-            </div>
-            <div className='w-1/2'>
-              <div className='font-bold text-2xl text-amber-500'>
-                Powerful report & Security
-              </div>
-              <div className='flex flex-col gap-1 text-left italic'>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>We have our own reports for all product categories</div>
-                </div>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>
-                    We can insert thousand of photos into a report in a short
-                    time
-                  </div>
-                </div>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>
-                    Customers receive report within 12 hours after inspection
-                    finishes
-                  </div>
-                </div>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Customer information is top secret</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='flex gap-6'>
-            <div className='w-1/2'>
-              <div className='font-bold text-2xl text-amber-500'>
-                Our Visions
-              </div>
-              <div className='flex flex-col gap-1 text-left italic'>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>
-                    Vietnam Inspection Team aims to be the most trustworthy
-                    inspection service provider in Vietnam
-                  </div>
-                </div>
-                <div className='flex items-center gap-2 pl-4'>
-                  <div>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>Never settle</div>
-                </div>
+                <div>Thêm ở đây</div>
               </div>
             </div>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
                 Good price, good services
               </div>
-              <div className='flex flex-col gap-1 text-left italic'>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>We work professionally, precisely and swiftly</div>
+              <div className='flex flex-col gap-2 text-left italic'>
+                <div>
+                  In Vietnam Inspection Team, working professionally, precisely
+                  and swiftly is a mandatory element in sustainable development.
+                  To win customers’ satisfaction, Vietnam Inspection Team has
+                  not only the best services but also the best price.
                 </div>
-                <div className='flex items-start gap-2 pl-4'>
-                  <div className='mt-[4px]'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='16'
-                      height='16'
-                      fill='currentColor'
-                      className='bi bi-check2'
-                      viewBox='0 0 16 16'
-                    >
-                      <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                    </svg>
-                  </div>
-                  <div>
-                    We win customers’ satisfaction by the best services and the
-                    best price
-                  </div>
+                <div>Thêm </div>
+              </div>
+            </div>
+          </div>
+          <div className='flex gap-6'>
+            <div className='w-1/2'>
+              <div className='font-bold text-2xl text-amber-500'>
+                Our values
+              </div>
+              <div className='flex flex-col gap-2 text-left italic'>
+                <div>
+                  Vietnam Inspection Team submits inspection result based on
+                  Objectivity, Transparency and Precision. Our services head
+                  toward customers with Integrity, Respect and Gratitude for
+                  sustainable development.
                 </div>
+                <div>Thêm </div>
+              </div>
+            </div>
+            <div className='w-1/2'>
+              <div className='font-bold text-2xl text-amber-500'>
+                Powerful report & Security
+              </div>
+              <div className='flex flex-col gap-2 text-left italic'>
+                <div>
+                  We have our own reports for all product categories. We follow
+                  customers’ requirements and customize our reports based on
+                  customers’ needs. Our inspectors have smart tools for
+                  inserting photos into reports. Due to being able to process
+                  huge inspection information, we always try to inspect as much
+                  as possible to take the most details about products. After
+                  inspection completes, customers will receive our reports
+                  within 12 hours and customer information is top secret.
+                </div>
+                <div>Thêm </div>
               </div>
             </div>
           </div>
@@ -371,171 +131,40 @@ export default function Achieve() {
             <div className='font-bold text-center text-3xl text-emerald-500 pb-6'>
               Missions, Values and Visions
             </div>
-            <div className='font-bold text-2xl text-amber-500'>Our Missions</div>
-            <div className='flex flex-col gap-1 text-left italic'>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Delete customers’ quality worry</div>
+            <div className='font-bold text-2xl text-amber-500'>Our mission</div>
+            <div className='flex flex-col gap-2 text-left italic'>
+              <div>
+                To focus on product quality that will bring good sales as well
+                as raise brand awareness. Our mission is to be a companion of
+                customers in the process of brand development. Vietnam 
+                Inspection Team helps customers manufacture high-quality 
+                products and we are one of the best partners of inspection 
+                service companies in Vietnam.
               </div>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Save customers’ money</div>
-              </div>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Help customers’ sales go smoothly</div>
-              </div>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Be customers’ reliable partner</div>
-              </div>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Always “kaizen” our services</div>
-              </div>
+              <div>Thêm ở đây</div>
             </div>
           </div>
           <div>
-            <div className='font-bold text-2xl text-amber-500'>Our Values</div>
-            <div className='flex flex-col gap-1 text-left italic'>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Objectivity and Transparency</div>
+            <div className='font-bold text-2xl text-amber-500'>Our vision</div>
+            <div className='flex flex-col gap-2 text-left italic'>
+              <div>
+                To aim to be the most trustworthy inspection service provider in
+                Vietnam and create a definition “not only inexpensive price but
+                also high quality”.
               </div>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Precision and Integrity</div>
-              </div>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Respect and Gratitude</div>
-              </div>
+              <div>Thêm ở đây</div>
             </div>
           </div>
           <div>
-            <div className='font-bold text-2xl text-amber-500'>Our Visions</div>
-            <div className='flex flex-col gap-1 text-left italic'>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>
-                  Vietnam Inspection Team aims to be the most trustworthy
-                  inspection service provider in Vietnam
-                </div>
+            <div className='font-bold text-2xl text-amber-500'>Our values</div>
+            <div className='flex flex-col gap-2 text-left italic'>
+              <div>
+                Vietnam Inspection Team submits inspection result based on
+                Objectivity, Transparency and Precision. Our services head
+                toward customers with Integrity, Respect and Gratitude for
+                sustainable development.
               </div>
-              <div className='flex items-center gap-2 pl-4'>
-                <div>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Never settle</div>
-              </div>
+              <div>Thêm </div>
             </div>
           </div>
 
@@ -546,158 +175,50 @@ export default function Achieve() {
             <div className='font-bold text-2xl text-amber-500'>
               Excellent inspectors
             </div>
-            <div className='flex flex-col gap-1 text-left italic'>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>
-                  Inspectors are qualified with ISO 17020:2012 and ISO 9001:2015
-                </div>
+            <div className='flex flex-col gap-2 text-left italic'>
+              <div>
+                Our inspectors who are qualified with ISO 17020:2012 and ISO
+                9001:2015 specialize in hardline, softline and Electrical &
+                Electronics. Inspectors of Vietnam Inspection Team have worked
+                in famous inspection service companies (Intertek, SGS, Bureau
+                Veritas and Qima). Our quality control and inspection skills are
+                always trained and improved.
               </div>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>
-                  Our teammates who specialize in hardline, softline and
-                  Electrical & Electronics have worked in famous inspection
-                  service companies (Intertek, SGS, Bureau Veritas and Qima)
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className='font-bold text-2xl text-amber-500'>
-              Powerful report & Security
-            </div>
-            <div className='flex flex-col gap-1 text-left italic'>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>We have our own reports for all product categories</div>
-              </div>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>
-                  We can insert thousand of photos into a report in a short time
-                </div>
-              </div>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>
-                  Customers receive report within 12 hours after inspection
-                  finishes
-                </div>
-              </div>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>Customer information is top secret</div>
-              </div>
+              <div>Thêm </div>
             </div>
           </div>
           <div>
             <div className='font-bold text-2xl text-amber-500'>
               Good price, good services
             </div>
-            <div className='flex flex-col gap-1 text-left italic'>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>We work professionally, precisely and swiftly</div>
+            <div className='flex flex-col gap-2 text-left italic'>
+              <div>
+                In Vietnam Inspection Team, working professionally, precisely
+                and swiftly is a mandatory element in sustainable development.
+                To win customers’ satisfaction, Vietnam Inspection Team has not
+                only the best services but also the best price.
               </div>
-              <div className='flex items-start gap-2 pl-4'>
-                <div className='mt-[4px]'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='16'
-                    height='16'
-                    fill='currentColor'
-                    className='bi bi-check2'
-                    viewBox='0 0 16 16'
-                  >
-                    <path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z' />
-                  </svg>
-                </div>
-                <div>
-                  We win customers’ satisfaction by the best services and the
-                  best price
-                </div>
-              </div>
+              <div>Thêm </div>
             </div>
           </div>
-          
+          <div>
+            <div className='font-bold text-2xl text-amber-500'>
+              Powerful report & Security
+            </div>
+            <div className='flex flex-col gap-2 text-left italic'>
+              <div>
+                We have our own reports for all product categories. We follow
+                customers’ requirements and customize our reports based on
+                customers’ needs. Our inspectors have smart tools for inserting
+                photos into reports. Due to being able to process huge
+                inspection information, we always try to inspect as much as
+                possible to take the most details about products. After
+                inspection completes, customers will receive our reports within
+                12 hours and customer information is top secret.
+              </div>
+              <div>Thêm </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
