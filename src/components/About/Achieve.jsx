@@ -69,8 +69,8 @@ export default function Achieve() {
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
                   To aim to be the most trustworthy inspection service provider
-                  in Vietnam and create a definition “not only inexpensive price
-                  but also high quality”.
+                  in Vietnam and create a definition “inexpensive price goes
+                  with high quality”.
                 </div>
                 <div></div>
               </div>
@@ -98,8 +98,8 @@ export default function Achieve() {
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
                   Vietnam Inspection Team submits inspection result based on
-                  Objectivity, Transparency and Precision. Our services head
-                  toward customers with Integrity, Respect and Gratitude for
+                  Objectivity, Transparency & Precision. Our services head
+                  toward customers with Integrity, Respect & Gratitude for
                   sustainable development.
                 </div>
                 <div></div>
@@ -149,8 +149,8 @@ export default function Achieve() {
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
                 To aim to be the most trustworthy inspection service provider in
-                Vietnam and create a definition “not only inexpensive price but
-                also high quality”.
+                Vietnam and create a definition “inexpensive price goes with
+                high quality”.
               </div>
               <div></div>
             </div>
@@ -160,8 +160,8 @@ export default function Achieve() {
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
                 Vietnam Inspection Team submits inspection result based on
-                Objectivity, Transparency and Precision. Our services head
-                toward customers with Integrity, Respect and Gratitude for
+                Objectivity, Transparency & Precision. Our services head
+                toward customers with Integrity, Respect & Gratitude for
                 sustainable development.
               </div>
               <div></div>
