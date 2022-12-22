@@ -156,7 +156,7 @@ export default function Footer() {
                     <li className='text-slate-100 flex items-start gap-2 text-sm font-semibold lg:justify-start justify-center'>
                       <i className='fa-solid fa-house py-1'></i>
                       <div>
-                        <div className='mb-2'>Hanoi: No. 17, Quarter Den Lu 2, Hoang Van Thu Ward, Hoang Mai District, Hanoi city, Vietnam</div>
+                        <div className='mb-2'>Hanoi: No. 17, Quarter Den Lu 2, Hoang Van Thu Ward, Hoang Mai District, Hanoi City, Vietnam</div>
                         <div>Hung Yen: No. 5, Phu Lam Hamlet, An Vi Commune, Khoai Chau District, Hung Yen Province, Vietnam</div>
                       </div>
                     </li>
