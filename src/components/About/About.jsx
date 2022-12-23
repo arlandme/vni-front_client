@@ -32,6 +32,7 @@ export default function About() {
             Initial production check (IPC), During production check (DUPRO), Pre-shipment inspection (PSI), Container loading supervision (LS), 
             Sample drawing (SD) and Full Inspection (FI).
           </p>
+          <br>
           <p className='pb-4'>
             Vietnam Inspection Team is a perfect choice for quality control and the best partner of inspection service companies.
           </p>
