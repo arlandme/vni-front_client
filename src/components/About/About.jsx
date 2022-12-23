@@ -30,7 +30,10 @@ export default function About() {
             from top inspection service companies. With a team of professional, qualified, experienced and local inspectors, 
             we provide our customers with the best quality control solution in every service and can do the full inspection services: 
             Initial production check (IPC), During production check (DUPRO), Pre-shipment inspection (PSI), Container loading supervision (LS), 
-            Sample drawing (SD) and Full Inspection (FI). Vietnam Inspection Team is a perfect choice for quality control and the best partner of inspection service companies.
+            Sample drawing (SD) and Full Inspection (FI). 
+          </p>
+          <p className='mt-4'>
+            Vietnam Inspection Team is a perfect choice for quality control and the best partner of inspection service companies.
           </p>
         </div>
         <div>
