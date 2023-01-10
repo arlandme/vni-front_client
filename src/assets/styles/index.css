@@ -10,8 +10,8 @@
 }
 
 @font-face {
-  font-family: 'Orbitron';
-  src: url('../fonts/font-family/orbitron/Orbitron.ttf');
+  font-family: 'Ubuntu';
+  src: url('../fonts/font-family/orbitron/Ubuntu.ttf');
 }
 
 body {
@@ -19,5 +19,5 @@ body {
 }
 
 .slogan {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
