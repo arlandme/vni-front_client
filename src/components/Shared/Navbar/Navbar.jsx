@@ -59,11 +59,6 @@ export default function Navbar({ services, products }) {
               className=' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap'
               to='/'
             >
-              <img
-                className='w-[200px] min-h-[50px] object-cover'
-                src={require('../../../assets/img/logos/logo.png')}
-                alt='logo vninspection'
-              />
               </div>
             </Link>
             <button
