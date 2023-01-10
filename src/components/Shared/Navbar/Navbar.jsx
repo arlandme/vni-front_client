@@ -59,6 +59,13 @@ export default function Navbar({ services, products }) {
               className=' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap'
               to='/'
             >
+              <img
+                className='w-[200px] min-h-[50px] object-cover'
+                src={require('../../../assets/img/logos/logo.png')}
+                alt='logo vninspection'
+              />
+              <div className='slogan text-sm text-left text-slate-50 border-t mt-1 pt-1'>
+                We Are Your Inspection Partner
               </div>
             </Link>
             <button
