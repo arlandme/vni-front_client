@@ -33,7 +33,7 @@ export default function About() {
             Sample drawing (SD) and Full Inspection (FI). We are a perfect choice for quality control and the best partner of inspection service companies.
           </p>
           <p className='mt-4'>
-            Vietnam Inspection Team - Your reliable inspection services.
+            Vietnam Inspection Team - Your reliable inspection service partner.
           </p>
         </div>
         <div>
