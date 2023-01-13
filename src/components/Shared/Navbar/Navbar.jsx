@@ -65,7 +65,7 @@ export default function Navbar({ services, products }) {
                 alt='logo vninspection'
               />
               <div className='slogan text-sm text-left text-slate-50 border-t mt-1 pt-1'>
-                Your Reliable Service Partner
+                Quality Is Essential
               </div>
             </Link>
             <button
