@@ -35,7 +35,7 @@ import { Link } from 'react-router-dom';
 export default function ServiceSession({ services }) {
   return (
     <>
-      <section className='pb-20 bg-slate-100 z-2'>
+      <section className='pb-10 bg-slate-100 z-2'>
         <div className='lg:container lg:mx-auto lg:px-6 px-4'>
           <h2 className='uppercase text-4xl text-center font-bold py-8 text-emerald-500/90 '>
             our services

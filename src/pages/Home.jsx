@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useOutletContext } from 'react-router-dom';
+import CustomerSession from '../components/Home/CustomerSession';
 import ServiceSession from '../components/Home/ServiceSession';
 import Slideshow from '../components/Home/Slideshow';
 
@@ -9,7 +10,7 @@ export default function Home() {
     window.scrollTo(0, 0);
   }, []);
 
-  const { services } = useOutletContext();
+  const { services, customers } = useOutletContext();
 
   return (
     <>
@@ -29,6 +30,8 @@ export default function Home() {
       <Slideshow />
 
       <ServiceSession services={services} />
+
+      <CustomerSession customers={customers} />
     </>
   );
 }
