@@ -18,12 +18,12 @@ export default function Achieve() {
           <div className='flex gap-6'>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Our Mission
+                Our Missions
               </div>
             </div>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Excellent inspectors
+                Excellent Inspectors
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Achieve() {
             </div>
             <div className='w-1/2'>
               {/* <div className='font-bold text-2xl text-emerald-500'>
-                Excellent inspectors
+                Excellent Inspectors
               </div> */}
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
@@ -64,7 +64,7 @@ export default function Achieve() {
           <div className='flex gap-6 mb-6'>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Our Vision
+                Our Visions
               </div>
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
@@ -77,7 +77,7 @@ export default function Achieve() {
             </div>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Good price, good services
+                Good Price & Good Services
               </div>
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
@@ -107,7 +107,7 @@ export default function Achieve() {
             </div>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Powerful report & Security
+                Powerful Report & Security
               </div>
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
@@ -128,7 +128,7 @@ export default function Achieve() {
         <div className='grid grid-cols-1 sm:hidden gap-4'>
           <div>
             <div className='font-bold text-center text-3xl text-emerald-500 pb-6'>
-              Our Mission, Vision and Values
+              Our Missions, Visions and Values
             </div>
             <div className='font-bold text-2xl text-amber-500'>Our Mission</div>
             <div className='flex flex-col gap-2 text-left italic'>
@@ -172,7 +172,7 @@ export default function Achieve() {
           </div>
           <div>
             <div className='font-bold text-2xl text-amber-500'>
-              Excellent inspectors
+              Excellent Inspectors
             </div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
@@ -188,7 +188,7 @@ export default function Achieve() {
           </div>
           <div>
             <div className='font-bold text-2xl text-amber-500'>
-              Good price, good services
+              Good Price & Good Services
             </div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
@@ -202,7 +202,7 @@ export default function Achieve() {
           </div>
           <div>
             <div className='font-bold text-2xl text-amber-500'>
-              Powerful report & Security
+              Powerful Report & Security
             </div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
