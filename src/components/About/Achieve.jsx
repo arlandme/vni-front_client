@@ -6,7 +6,7 @@ export default function Achieve() {
           <div className='flex gap-6 pt-6 pb-8'>
             <div className='w-1/2'>
               <div className='font-bold text-center text-3xl text-emerald-500'>
-                Our Mission, Vision and Values
+                Our Missions, Visions and Values
               </div>
             </div>
             <div className='w-1/2'>
