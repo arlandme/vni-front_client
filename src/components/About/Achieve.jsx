@@ -118,7 +118,7 @@ export default function Achieve() {
             </div>
           </div>
           <div>
-            <div className='font-bold text-2xl text-amber-500'>Our Vision</div>
+            <div className='font-bold text-2xl text-amber-500'>Our Visions</div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
                 To aim to be the most trustworthy inspection service provider in
