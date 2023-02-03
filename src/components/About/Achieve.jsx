@@ -45,7 +45,7 @@ export default function Achieve() {
               </div> */}
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
-                  To be qualified with ISO 17020:2012 and ISO 9001:2015 and specialize in Hardline, Softline and Electrical & Electronics.
+                  To be qualified with ISO 17020:2012 & ISO 9001:2015 and specialize in Hardline, Softline and Electrical & Electronics.
                 </div>
                 <div></div>
               </div>
@@ -147,7 +147,7 @@ export default function Achieve() {
             </div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
-                To be qualified with ISO 17020:2012 and ISO 9001:2015 and specialize in Hardline, Softline and Electrical & Electronics.
+                To be qualified with ISO 17020:2012 & ISO 9001:2015 and specialize in Hardline, Softline and Electrical & Electronics.
               </div>
               <div></div>
             </div>
