@@ -193,7 +193,7 @@ export default function Footer() {
                   rel='noopener noreferrer'
                   className='text-slate-100 hover:text-slate-200'
                 >
-                  HandiPassion JSC
+                  HandiPassion Joint Stock Company
                 </a>
               </div>
             </div>
