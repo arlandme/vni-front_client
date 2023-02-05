@@ -64,7 +64,6 @@ export default function Navbar({ services, products }) {
                 src={require('../../../assets/img/logos/logo.png')}
                 alt='logo vninspection'
               />
-              </div>
             </Link>
             <button
               className='cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none -mr-3'
