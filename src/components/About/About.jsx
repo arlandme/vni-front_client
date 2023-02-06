@@ -14,7 +14,9 @@ export default function About() {
             as strictly and systematically control product quality based on objectivity, transparency and accuracy.
           </p>
           <p className='pb-4'>
-            InsQuality has two offices which perfectly support the inspection services
+            InsQuality was created as a brand of HandiPassion JSC in 2023. InsQuality functions as a quality management team for handicraft products 
+            manufactured by HandiPassion with the process of strict and flexible control to ensure fewest defects can exist.
+            We have two offices which perfectly support the inspection services
             and fully cover the northern areas. Strong industrialization will spread in Northern Vietnam in the future,
             therefore we set up an office in Hung Yen to easily cover the inspections in northern provinces with large industrial zones.  
             Vietnam is oriented to focus on pushing industrialization development with available advantageous conditions, 
@@ -29,11 +31,10 @@ export default function About() {
             Bachelor of Engineering and good English skills. Their excellences at every industry are dedicated to bring the best inspection 
             services for customers. With a team of professional, qualified, experienced and local inspectors, we provide our customers with the best 
             quality control solution in every service and can do the full inspection services: Initial production check (IPC), During production check (DUPRO), 
-            Pre-shipment inspection (PSI), Container loading supervision (LS), Sample drawing (SD), Full Inspection (FI) and Factory audit (FA). 
-            We are a perfect choice for customers who look for a trustworthy inspection company to protect their brands.
+            Pre-shipment inspection (PSI), Container loading supervision (LS), Sample drawing (SD), Full Inspection (FI) and Factory audit (FA).
           </p>
           <p className='mt-4'>
-            InsQuality - Your reliable inspection service partner.
+            We are a perfect choice for customers who look for a trustworthy inspection company to protect their brands.
           </p>
         </div>
         <div>
