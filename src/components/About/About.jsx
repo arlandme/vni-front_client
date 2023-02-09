@@ -14,7 +14,7 @@ export default function About() {
             as strictly and systematically control product quality based on objectivity, transparency and accuracy.
           </p>
           <p className='pb-4'>
-            InsQuality was created as a brand of HandiPassion JSC in 2023. InsQuality functions as a quality management team for handicraft products 
+            InsQuality which was created as a brand of HandiPassion JSC in 2023 functions as a quality management team for handicraft products 
             manufactured by HandiPassion with the process of strict and flexible control to ensure fewest defects can exist.
             We have two offices which perfectly support the inspection services
             and fully cover the northern areas. Strong industrialization will spread in Northern Vietnam in the future,
