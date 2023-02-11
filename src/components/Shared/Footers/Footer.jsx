@@ -33,7 +33,7 @@ export default function Footer() {
               </h5>
               <div className='mt-6 lg:mb-0 mb-6 flex items-center lg:justify-start justify-center flex-wrap gap-y-2'>
                 <a
-                  href='tel:0979702787'
+                  href='tel:0369134901'
                   className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -72,7 +72,7 @@ export default function Footer() {
                   />
                 </a>
                 <a
-                  href='https://zalo.me/0979702787'
+                  href='https://zalo.me/0369134901'
                   className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -103,7 +103,7 @@ export default function Footer() {
                 </div>
                 <div className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 relative group'>
                   <div className='absolute top-full left-0 py-2 px-4 bg-white rounded group-hover:block hidden'>
-                    0979702787
+                    0369134901
                   </div>
                   <a
                     href='https://www.whatsapp.com/'
@@ -172,10 +172,10 @@ export default function Footer() {
                     <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold lg:justify-start justify-center'>
                       <i className='fa-solid fa-phone'></i>
                       <a
-                        href='tel:0979702787'
+                        href='tel:0369134901'
                         className='hover:text-slate-200 hover:underline py-2'
                       >
-                        +84 979 702 787
+                        +84 369 134 901
                       </a>
                     </li>
                   </ul>
