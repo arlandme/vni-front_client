@@ -77,11 +77,11 @@ export default function Sidebar({ products, services, data }) {
         </div>
         <div className='pt-4 pb-6 border-b-2 border-emerald-600'>
           <a
-            href='tel:0979702787'
+            href='tel:0369134901'
             className='py-4 px-6 bg-emerald-500 inline-flex items-center gap-2 justify-center w-full text-lg font-semibold text-slate-50 hover:bg-emerald-600/80 hover:text-white transition rounded mb-4'
           >
-            <i className='fa-solid fa-circle-phone text-3xl'></i> +84 97 970
-            2787
+            <i className='fa-solid fa-circle-phone text-3xl'></i> +84 369 134
+            901
           </a>
           <a
             href='mailto:info@defectfound.com'
