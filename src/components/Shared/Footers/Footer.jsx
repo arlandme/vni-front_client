@@ -86,7 +86,7 @@ export default function Footer() {
                 </a>
                 <div className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 relative group'>
                   <div className='absolute top-full left-0 py-2 px-4 bg-white rounded group-hover:block hidden whitespace-nowrap'>
-                    ID: vninspection
+                    ID: insquality
                   </div>
                   <a
                     href='https://www.wechat.com/'
