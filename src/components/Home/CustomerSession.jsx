@@ -77,8 +77,16 @@ export default function CustomerSession({ customers }) {
                           className='object-cover w-full h-full rounded transition group-hover:scale-125 duration-500'
                         />
                       </div>
-                      <a
+                      {/* <a
                         className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 lg:opacity-0 px-4 py-2 rounded bg-white/90 transition-all hover:text-sky-500 hover:underline font-semibold text-lg max-w-1/2'
+                        href={item.link || '/'}
+                        target={'_blank'}
+                        rel='noreferrer'
+                      >
+                        {item.name}
+                      </a> */}
+                      <a
+                        className='  transition-all hover:text-sky-500 hover:underline  text-lg max-w-1/2'
                         href={item.link || '/'}
                         target={'_blank'}
                         rel='noreferrer'
