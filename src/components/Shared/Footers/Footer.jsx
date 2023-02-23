@@ -2,26 +2,26 @@ import { footer } from '../../../assets/data/footer';
 import { info } from '../../../assets/data/info';
 import { Link } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
-import { useEffect, useRef, useState } from 'react';
+// import { useEffect, useRef, useState } from 'react';
 
 import './footer.css';
 
 export default function Footer({ services, products }) {
-  const contentServicesRef = useRef();
-  const contentProductsRef = useRef();
+  // const contentServicesRef = useRef();
+  // const contentProductsRef = useRef();
 
-  const [heightService, setHeightService] = useState(0);
-  const [heightProduct, setHeightProduct] = useState(0);
+  // const [heightService, setHeightService] = useState(0);
+  // const [heightProduct, setHeightProduct] = useState(0);
 
-  const [isCollapseProduct, setIsCollapseProduct] = useState(false);
-  const [isCollapseService, setIsCollapseService] = useState(false);
+  // const [isCollapseProduct, setIsCollapseProduct] = useState(false);
+  // const [isCollapseService, setIsCollapseService] = useState(false);
 
-  useEffect(() => {
-    if (contentServicesRef && contentProductsRef) {
-      setHeightProduct(contentProductsRef.current.offsetHeight);
-      setHeightService(contentServicesRef.current.offsetHeight);
-    }
-  }, [contentServicesRef?.current?.offsetHeight, contentProductsRef?.current?.offsetHeight]);
+  // useEffect(() => {
+  //   if (contentServicesRef && contentProductsRef) {
+  //     setHeightProduct(contentProductsRef.current.offsetHeight);
+  //     setHeightService(contentServicesRef.current.offsetHeight);
+  //   }
+  // }, [contentServicesRef?.current?.offsetHeight, contentProductsRef?.current?.offsetHeight]);
 
   // useEffect(() => {
   //   if (window.innerWidth >= 640)
@@ -43,15 +43,15 @@ export default function Footer({ services, products }) {
             <div className='order-2'>
               <h3
                 className='font-bold text-lg mb-4 text-white text-left sm:text-center'
-                onClick={() => setIsCollapseProduct(!isCollapseProduct)}
+                // onClick={() => setIsCollapseProduct(!isCollapseProduct)}
               >
                 Products{' '}
-                <i
+                {/* <i
                   className={
                     'fa-regular text-lg ml-2 inline-block sm:!hidden transition-all ' +
                     (isCollapseProduct ? 'fa-minus' : 'fa-plus')
                   }
-                ></i>
+                ></i> */}
               </h3>
               <div className='hidden sm:flex text-sm md:justify-center items-start '>
                 <ul className='pr-3'>
@@ -95,17 +95,18 @@ export default function Footer({ services, products }) {
               </div>
               <div
                 className={
-                  'sm:h-0 text-sm text-white text-left sm:text-center transition-all duration-500 '
+                  'sm:hidden block text-sm text-white text-left sm:text-center transition-all duration-500 '
                 }
-                style={{ height: isCollapseProduct ? heightProduct + 'px' : 0 }}
+                // style={{ height: isCollapseProduct ? heightProduct + 'px' : 0 }}
               >
                 <div
-                  ref={contentProductsRef}
+                  // ref={contentProductsRef}
                   className={
-                    'transition duration-700 ' +
-                    (isCollapseProduct
-                      ? 'opacity-100 static'
-                      : 'opacity-0 absolute -left-[9999px] -top-[999px]')
+                    'transition duration-700 '
+                    // +
+                    // (isCollapseProduct
+                    //   ? 'opacity-100 static'
+                    //   : 'opacity-0 absolute -left-[9999px] -top-[999px]')
                   }
                 >
                   {products &&
@@ -124,15 +125,15 @@ export default function Footer({ services, products }) {
             <div className='order-1'>
               <h3
                 className='font-bold text-lg mb-4 text-white text-left sm:text-center'
-                onClick={() => setIsCollapseService(!isCollapseService)}
+                // onClick={() => setIsCollapseService(!isCollapseService)}
               >
                 Services{' '}
-                <i
+                {/* <i
                   className={
                     'fa-regular text-lg ml-2 inline-block sm:!hidden transition-all ' +
                     (isCollapseService ? 'fa-minus' : 'fa-plus')
                   }
-                ></i>
+                ></i> */}
               </h3>
               <div className='hidden sm:flex text-sm'>
                 <ul className='pr-3'>
@@ -176,17 +177,18 @@ export default function Footer({ services, products }) {
               </div>
               <div
                 className={
-                  'sm:h-0 text-sm text-white text-left sm:text-center transition-all duration-500 '
+                  'sm:hidden block text-sm text-white text-left sm:text-center transition-all duration-500 '
                 }
-                style={{ height: isCollapseService ? heightService + 'px' : 0 }}
+                // style={{ height: isCollapseService ? heightService + 'px' : 0 }}
               >
                 <div
-                  ref={contentServicesRef}
+                  // ref={contentServicesRef}
                   className={
-                    'transition duration-700 ' +
-                    (isCollapseService
-                      ? 'opacity-100 static'
-                      : 'opacity-0 absolute -left-[9999px] -top-[999px]')
+                    'transition duration-700 '
+                    // +
+                    // (isCollapseService
+                    //   ? 'opacity-100 static'
+                    //   : 'opacity-0 absolute -left-[9999px] -top-[999px]')
                   }
                 >
                   {services &&
@@ -211,8 +213,8 @@ export default function Footer({ services, products }) {
                     Contact
                   </h3>
                   <ul className='list-unstyled'>
-                    <li className='text-slate-100 flex items-start gap-2 text-sm font-normal justify-start'>
-                      <i className='fa-solid fa-house py-1'></i>
+                    <li className='text-slate-100 flex items-start text-sm font-normal justify-start'>
+                      <i className='fa-solid fa-house py-1 mr-2'></i>
                       <div>
                         {info.addresses.map((item, index) => (
                           <div key={index} className='mb-2 last:mb-0'>
@@ -221,8 +223,8 @@ export default function Footer({ services, products }) {
                         ))}
                       </div>
                     </li>
-                    <li className='text-slate-100 flex items-center gap-2 text-sm font-normal justify-start'>
-                      <i className='fa-solid fa-envelope'></i>
+                    <li className='text-slate-100 flex items-center text-sm font-normal justify-start'>
+                      <i className='fa-solid fa-envelope mr-2'></i>
                       <a
                         href={'mailto:' + info.email}
                         className='hover:text-slate-200 hover:underline py-2'
@@ -230,8 +232,8 @@ export default function Footer({ services, products }) {
                         {info.email}
                       </a>
                     </li>
-                    <li className='text-slate-100 flex items-center gap-2 text-sm font-normal justify-start'>
-                      <i className='fa-solid fa-phone'></i>
+                    <li className='text-slate-100 flex items-center text-sm font-normal justify-start'>
+                      <i className='fa-solid fa-phone mr-2'></i>
                       <a
                         href={'tel:' + info.phone}
                         className='hover:text-slate-200 hover:underline py-2'

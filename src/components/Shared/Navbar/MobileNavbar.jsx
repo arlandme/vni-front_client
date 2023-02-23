@@ -178,7 +178,7 @@ export default function MobileNavbar({
             }
             onClick={() => setNavbarOpen(false)}
           >
-            Us
+            About Us
           </Link>
           <Link
             to={'/coverage'}
