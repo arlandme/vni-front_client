@@ -67,7 +67,7 @@ export default function Achieve() {
             </div>
             <div className='w-1/2'>
               <div className='font-bold text-2xl text-amber-500'>
-                Good Price & Good Services
+                Good & Good
               </div>
               <div className='flex flex-col gap-2 text-left italic'>
                 <div>
@@ -154,7 +154,7 @@ export default function Achieve() {
           </div>
           <div>
             <div className='font-bold text-2xl text-amber-500'>
-              Good Price & Good Services
+              Good & Good
             </div>
             <div className='flex flex-col gap-2 text-left italic'>
               <div>
