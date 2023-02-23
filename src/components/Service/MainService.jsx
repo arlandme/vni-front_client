@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
-import Achieve from '../About/Achieve';
+import Why from '../About/Why';
 import SuggestLink from '../Shared/Suggests/SuggestLink';
 // import Breadcrumb from '../Shared/Breadcrumbs/Breadcrumbs';
 
@@ -67,7 +67,7 @@ export default function Main({ data, services }) {
           <SuggestLink data={services} single={data} />
         </div>
 
-        <Achieve />
+        <Why />
       </div>
     </>
   );

@@ -4,11 +4,14 @@ import { capitalize } from '../../../utils/formatString';
 import { informationValidator } from '../../../utils/validation';
 import Toast from '../Toasts/Toast';
 import SuggestLink from '../Suggests/SuggestLink';
+import { info } from '../../../assets/data/info';
 
 export default function Sidebar({ products, services, data }) {
   const [messages, setMessages] = useState([]);
   const [showToast, setShowToast] = useState(false);
   const [toastStatus, setToastStatus] = useState(false);
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const firstNameRef = useRef();
   const lastNameRef = useRef();
@@ -20,7 +23,7 @@ export default function Sidebar({ products, services, data }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setIsLoading(true);
     const data = {
       firstName: capitalize(firstNameRef.current.value),
       lastName: capitalize(lastNameRef.current.value),
@@ -46,11 +49,13 @@ export default function Sidebar({ products, services, data }) {
       sendMail(data)
         .then((res) => {
           if (res.status === 200) {
+            setIsLoading(false);
             setToastStatus(true);
             handleShowToast();
           }
         })
         .catch((err) => {
+          setIsLoading(false);
           setToastStatus(false);
           handleShowToast();
         });
@@ -77,18 +82,17 @@ export default function Sidebar({ products, services, data }) {
         </div>
         <div className='pt-4 pb-6 border-b-2 border-emerald-600'>
           <a
-            href='tel:0369134901'
-            className='py-4 px-6 bg-emerald-500 inline-flex items-center gap-2 justify-center w-full text-lg font-semibold text-slate-50 hover:bg-emerald-600/80 hover:text-white transition rounded mb-4'
+            href={'tel:' + info.phone}
+            className='py-4 px-6 bg-emerald-500 inline-flex items-center gap-2 justify-center w-full text-lg font-semibold text-slate-50 hover:bg-emerald-600/80 hover:text-white transition  mb-4'
           >
-            <i className='fa-solid fa-circle-phone text-3xl'></i> +84 369 134
-            901
+            <i className='fa-solid fa-circle-phone text-3xl'></i> {info.phone}
           </a>
           <a
-            href='mailto:info@defectfound.com'
-            className='py-4 px-6 bg-yellow-400 inline-flex items-center gap-2 justify-center w-full text-lg font-semibold text-slate-50 hover:bg-yellow-500 hover:text-white transition rounded'
+            href={'mailto:' + info.email}
+            className='py-4 px-6 bg-yellow-400 inline-flex items-center gap-2 justify-center w-full text-lg font-semibold text-slate-50 hover:bg-yellow-500 hover:text-white transition '
           >
             <i className='fa-solid fa-circle-envelope text-3xl'></i>{' '}
-            info@defectfound.com
+            {info.email}
           </a>
         </div>
 
@@ -97,13 +101,13 @@ export default function Sidebar({ products, services, data }) {
           <span className='pt-2 inline-block'>
             We'll respond within about 12 hours.
           </span>
-          <form className='p-2 bg-slate-100 rounded my-4'>
+          <form className='p-2 bg-slate-100  my-4'>
             <input
               ref={firstNameRef}
               type='text'
-              placeholder='First Name'
+              placeholder='First Name (*)'
               name='first_name'
-              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
+              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white  text-sm  focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
             />
             <small className='text-red-500 font-medium'>
               {messages.map((message) =>
@@ -113,9 +117,9 @@ export default function Sidebar({ products, services, data }) {
             <input
               ref={lastNameRef}
               type='text'
-              placeholder='Last Name'
+              placeholder='Last Name (*)'
               name='last_name'
-              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
+              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white  text-sm  focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
             />
             <small className='text-red-500 font-medium'>
               {messages.map((message) =>
@@ -127,7 +131,7 @@ export default function Sidebar({ products, services, data }) {
               type='text'
               placeholder='Company'
               name='company'
-              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
+              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white  text-sm  focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
             />
             <small className='text-red-500 font-medium'>
               {messages.map((message) =>
@@ -137,9 +141,9 @@ export default function Sidebar({ products, services, data }) {
             <input
               ref={emailRef}
               type='email'
-              placeholder='Email'
+              placeholder='Email (*)'
               name='email'
-              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
+              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white  text-sm  focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
             />
             <small className='text-red-500 font-medium'>
               {messages.map((message) =>
@@ -149,9 +153,9 @@ export default function Sidebar({ products, services, data }) {
             <input
               ref={phoneRef}
               type='text'
-              placeholder='Telephone'
+              placeholder='Telephone (*)'
               name='telephone'
-              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
+              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white  text-sm  focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
             />
             <small className='text-red-500 font-medium'>
               {messages.map((message) =>
@@ -162,7 +166,7 @@ export default function Sidebar({ products, services, data }) {
               ref={questionRef}
               placeholder='Enter your question in English here'
               name='question'
-              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
+              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-700 bg-white  text-sm  focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
             ></textarea>
             <small className='text-red-500 font-medium'>
               {messages.map((message) =>
@@ -175,7 +179,7 @@ export default function Sidebar({ products, services, data }) {
             </div>
             <select
               ref={industryRef}
-              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
+              className='border-0 px-3 py-3 mt-4 placeholder-slate-400 text-slate-600 bg-white  text-sm  focus:outline-none focus:ring w-full ease-linear transition-all duration-150 font-medium'
               defaultValue={''}
             >
               <option value=''>Select an Industry</option>
@@ -192,15 +196,44 @@ export default function Sidebar({ products, services, data }) {
               )}
             </small>
 
-            <button
-              type='submit'
-              className={
-                'text-slate-50 py-2 px-6 mt-4 w-full font-semibold text-lg rounded hover:text-white transition bg-emerald-500 hover:bg-emerald-600/80'
-              }
-              onClick={handleSubmit}
-            >
-              Contact Us
-            </button>
+            {!isLoading ? (
+              <button
+                type='submit'
+                className={
+                  'text-slate-50 py-2 px-6 mt-4 w-full font-semibold text-lg  hover:text-white transition bg-emerald-500 hover:bg-emerald-600/80'
+                }
+                onClick={handleSubmit}
+              >
+                Contact Us
+              </button>
+            ) : (
+              <button
+                data-modal-hide='staticModal'
+                type='button'
+                className='text-slate-50 py-2 px-6 mt-4 w-full font-semibold text-lg  hover:text-white transition bg-emerald-500 hover:bg-emerald-600/80 flex items-center justify-center'
+              >
+                <svg
+                  className='animate-spin h-5 w-5 text-white mr-2'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                >
+                  <circle
+                    className='opacity-25'
+                    cx='12'
+                    cy='12'
+                    r='10'
+                    stroke='currentColor'
+                    strokeWidth='4'
+                  ></circle>
+                  <path
+                    className='opacity-75'
+                    fill='currentColor'
+                    d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
+                  ></path>
+                </svg> Sending...
+              </button>
+            )}
           </form>
         </div>
         <div className='hidden lg:block'>

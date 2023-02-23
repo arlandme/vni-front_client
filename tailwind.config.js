@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'emerald': {
-          500: '#31C48D',
+          500: '#38C48C',
         }
       },
       minHeight: {

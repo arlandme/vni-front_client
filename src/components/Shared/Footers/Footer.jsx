@@ -1,181 +1,226 @@
-export default function Footer() {
+import { footer } from '../../../assets/data/footer';
+import { info } from '../../../assets/data/info';
+import { Link } from 'react-router-dom';
+import Skeleton from 'react-loading-skeleton';
+import { useEffect, useRef, useState } from 'react';
+
+export default function Footer({ services, products }) {
+  const contentServicesRef = useRef();
+  const contentProductsRef = useRef();
+
+  const [heightService, setHeightService] = useState(0);
+  const [heightProduct, setHeightProduct] = useState(0);
+
+  const [isCollapseProduct, setIsCollapseProduct] = useState(false);
+  const [isCollapseService, setIsCollapseService] = useState(false);
+
+  useEffect(() => {
+    if (contentServicesRef) {
+      setHeightProduct(contentProductsRef.current.offsetHeight);
+      setHeightService(contentServicesRef.current.offsetHeight);
+    }
+  }, [contentServicesRef?.current?.offsetHeight]);
+
   return (
     <>
       <footer className='relative bg-slate-700 pt-8 pb-6'>
-        {/* <div
-          className='bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20'
-          style={{ transform: 'translateZ(0)' }}
-        >
-          <svg
-            className='absolute bottom-0 overflow-hidden'
-            xmlns='http://www.w3.org/2000/svg'
-            preserveAspectRatio='none'
-            version='1.1'
-            viewBox='0 0 2560 100'
-            x='0'
-            y='0'
-          >
-            <polygon
-              className='text-slate-700 fill-current'
-              points='2560 0 2560 100 0 100'
-            ></polygon>
-          </svg>
-        </div> */}
-        <div className='container mx-auto px-4'>
-          <div className='flex flex-wrap text-center lg:text-left'>
-            <div className='w-full lg:w-1/2 px-4'>
-              <h4 className='text-3xl font-semibold text-slate-50 mb-1'>
-                Let us provide the best services for you
-              </h4>
-              <h5 className='text-lg mt-0 mb-2 text-slate-50'>
-                Please don’t hesitate to contact us if you have any questions,
-                we'll respond within 12 hours.
-              </h5>
-              <div className='mt-6 lg:mb-0 mb-6 flex items-center lg:justify-start justify-center flex-wrap gap-y-2'>
-                <a
-                  href='tel:0369134901'
-                  className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='Phone Number'
+        <div className='lg:container mx-auto lg:px-6 px-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+            <div className='flex-1 order-2'>
+              <h3
+                className='font-bold text-lg mb-4 text-white text-center'
+                onClick={() => setIsCollapseProduct(!isCollapseProduct)}
+              >
+                Products{' '}
+                <i
+                  className={
+                    'fa-regular text-lg ml-2 inline-block sm:!hidden transition-all ' +
+                    (isCollapseProduct ? 'fa-minus' : 'fa-plus')
+                  }
+                ></i>
+              </h3>
+              <div className='hidden sm:flex text-sm md:justify-center items-start md:text-center'>
+                <ul className='pr-3'>
+                  {products
+                    ? products?.map(
+                        (item, index) =>
+                          products.length / 2 > index && (
+                            <li key={item._id} className='mb-2 text-white'>
+                              <Link
+                                to={'/products/' + item.path}
+                                className='hover:text-emerald-500'
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          )
+                      )
+                    : [...Array(4)].map((_, index) => (
+                        <Skeleton className='mb-2' key={index} height={20} />
+                      ))}
+                </ul>
+                <ul className='pl-3'>
+                  {products
+                    ? products?.map(
+                        (item, index) =>
+                          products.length / 2 <= index && (
+                            <li key={item._id} className='mb-2 text-white'>
+                              <Link
+                                to={'/products/' + item.path}
+                                className='hover:text-emerald-500'
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          )
+                      )
+                    : [...Array(4)].map((_, index) => (
+                        <Skeleton className='mb-2' key={index} height={20} />
+                      ))}
+                </ul>
+              </div>
+              <div
+                className={
+                  'sm:h-0 text-sm text-white text-center transition-all duration-500 '
+                }
+                style={{ height: isCollapseProduct ? heightProduct + 'px' : 0 }}
+              >
+                <div
+                  ref={contentProductsRef}
+                  className={
+                    'transition duration-700 ' +
+                    (isCollapseProduct
+                      ? 'opacity-100 static'
+                      : 'opacity-0 absolute -left-[9999px]')
+                  }
                 >
-                  <img
-                    className='w-full h-full rounded-full object-cover'
-                    src={require('../../../assets/img/icon/7.PNG')}
-                    alt='phone'
-                  />
-                </a>
-                <a
-                  href='https://www.facebook.com/profile.php?id=100086861351190'
-                  className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='Facebook'
-                >
-                  <img
-                    className='w-full h-full rounded-full object-cover'
-                    src={require('../../../assets/img/icon/13.PNG')}
-                    alt='facebook'
-                  />
-                </a>
-                <a
-                  href='https://instagram.com/defectfound'
-                  className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='Instagram'
-                >
-                  <img
-                    className='w-full h-full rounded-full object-cover'
-                    src={require('../../../assets/img/icon/15.png')}
-                    alt='Instagram'
-                  />
-                </a>
-                <a
-                  href='https://zalo.me/0369134901'
-                  className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='Zalo'
-                >
-                  <img
-                    className='w-full h-full rounded-full object-cover'
-                    src={require('../../../assets/img/icon/9.PNG')}
-                    alt='zalo'
-                  />
-                </a>
-                <div className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 relative group'>
-                  <div className='absolute top-full left-0 py-2 px-4 bg-white rounded group-hover:block hidden whitespace-nowrap'>
-                    ID: insquality
-                  </div>
-                  <a
-                    href='https://www.wechat.com/'
-                    className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <img
-                      className='w-full h-full rounded-full object-cover'
-                      src={require('../../../assets/img/icon/8.PNG')}
-                      alt='Wechat'
-                    />
-                  </a>
+                  {products &&
+                    products.map((item) => (
+                      <Link
+                        key={item._id}
+                        to={'/products/' + item.path}
+                        className='block mb-2 active:text-emerald-500'
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
                 </div>
-                <div className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 relative group'>
-                  <div className='absolute top-full left-0 py-2 px-4 bg-white rounded group-hover:block hidden'>
-                    0369134901
-                  </div>
-                  <a
-                    href='https://www.whatsapp.com/'
-                    className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <img
-                      className='w-full h-full rounded-full object-cover'
-                      src={require('../../../assets/img/icon/10.PNG')}
-                      alt='Whatsapp'
-                    />
-                  </a>
-                </div>
-                <a
-                  href='https://twitter.com/defect_found'
-                  className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='Twitter'
-                >
-                  <img
-                    className='w-full h-full rounded-full object-cover'
-                    src={require('../../../assets/img/icon/12.png')}
-                    alt='twitter'
-                  />
-                </a>
-                <a
-                  href='https://www.linkedin.com/company/vietnam-inspection-service-team/'
-                  className='bg-translate text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='Linkedin'
-                >
-                  <img
-                    className='w-full h-full rounded-full object-cover'
-                    src={require('../../../assets/img/icon/14.png')}
-                    alt='Linkedin'
-                  />
-                </a>
               </div>
             </div>
-            <div className='w-full lg:w-6/12 px-4'>
+            <div className='flex-1 order-1'>
+              <h3
+                className='font-bold text-lg mb-4 text-white text-center'
+                onClick={() => setIsCollapseService(!isCollapseService)}
+              >
+                Services{' '}
+                <i
+                  className={
+                    'fa-regular text-lg ml-2 inline-block sm:!hidden transition-all ' +
+                    (isCollapseService ? 'fa-minus' : 'fa-plus')
+                  }
+                ></i>
+              </h3>
+              <div className='hidden sm:flex text-sm'>
+                <ul className='pr-3'>
+                  {services
+                    ? services?.map(
+                        (item, index) =>
+                          Math.ceil(services.length / 2) - 1 >= index && (
+                            <li key={item._id} className='mb-2 text-white'>
+                              <Link
+                                to={'/services/' + item.path}
+                                className='hover:text-emerald-500'
+                              >
+                                {item.title}
+                              </Link>
+                            </li>
+                          )
+                      )
+                    : [...Array(4)].map((_, index) => (
+                        <Skeleton className='mb-2' key={index} height={20} />
+                      ))}
+                </ul>
+                <ul className='pl-3'>
+                  {services
+                    ? services?.map(
+                        (item, index) =>
+                          Math.ceil(services.length / 2) - 1 < index && (
+                            <li key={item._id} className='mb-2 text-white'>
+                              <Link
+                                to={'/services/' + item.path}
+                                className='hover:text-emerald-500'
+                              >
+                                {item.title}
+                              </Link>
+                            </li>
+                          )
+                      )
+                    : [...Array(4)].map((_, index) => (
+                        <Skeleton className='mb-2' key={index} height={20} />
+                      ))}
+                </ul>
+              </div>
+              <div
+                className={
+                  'sm:h-0 text-sm text-white text-center transition-all duration-500 '
+                }
+                style={{ height: isCollapseService ? heightService + 'px' : 0 }}
+              >
+                <div
+                  ref={contentServicesRef}
+                  className={
+                    'transition duration-700 ' +
+                    (isCollapseService
+                      ? 'opacity-100 static'
+                      : 'opacity-0 absolute -left-[9999px]')
+                  }
+                >
+                  {services &&
+                    services.map((item) => (
+                      <Link
+                        key={item._id}
+                        to={'/services/' + item.path}
+                        className='block mb-2 active:text-emerald-500'
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                </div>
+              </div>
+            </div>
+            <div className='flex-1 order-last'>
               <div className='flex flex-wrap items-top mb-6 justify-end'>
-                <div className='w-full lg:w-8/12 px-4'>
-                  <span className='block uppercase text-slate-400 text-sm font-semibold mb-2'>
+                <div className='w-full'>
+                  <h3 className='font-bold text-lg mb-4 text-white text-center'>
                     Contact
-                  </span>
+                  </h3>
                   <ul className='list-unstyled'>
-                    <li className='text-slate-100 flex items-start gap-2 text-sm font-semibold lg:justify-start justify-center'>
+                    <li className='text-slate-100 flex items-start gap-2 text-sm font-semibold justify-start'>
                       <i className='fa-solid fa-house py-1'></i>
                       <div>
-                        <div className='mb-2'>Hanoi: No. 17, Den Lu 2, Hoang Mai street, Hoang Van Thu ward, Hoang Mai district, Hanoi city, Vietnam</div>
-                        <div>Hung Yen: No. 5, Phu Lam hamlet, An Vi commune, Khoai Chau district, Hung Yen province, Vietnam</div>
+                        {info.addresses.map((item, index) => (
+                          <div key={index} className='mb-2 last:mb-0'>
+                            {item}
+                          </div>
+                        ))}
                       </div>
                     </li>
-                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold lg:justify-start justify-center'>
+                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold justify-start'>
                       <i className='fa-solid fa-envelope'></i>
                       <a
-                        href='mailto:info@defectfound.com'
+                        href={'mailto:' + info.email}
                         className='hover:text-slate-200 hover:underline py-2'
                       >
-                        info@defectfound.com
+                        {info.email}
                       </a>
                     </li>
-                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold lg:justify-start justify-center'>
+                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold justify-start'>
                       <i className='fa-solid fa-phone'></i>
                       <a
-                        href='tel:0369134901'
+                        href={'tel:' + info.phone}
                         className='hover:text-slate-200 hover:underline py-2'
                       >
-                        +84 369 134 901
+                        {info.phone}
                       </a>
                     </li>
                   </ul>
@@ -193,7 +238,7 @@ export default function Footer() {
                   rel='noopener noreferrer'
                   className='text-slate-100 hover:text-slate-200'
                 >
-                  HandiPassion Joint Stock Company
+                  {footer.titleCopyright}
                 </a>
               </div>
             </div>

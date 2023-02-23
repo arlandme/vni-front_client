@@ -5,8 +5,6 @@ import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { useRef } from 'react';
 
 export default function CustomerSession({ customers }) {
@@ -38,7 +36,6 @@ export default function CustomerSession({ customers }) {
               }}
               loop
               autoplay={{
-                disableOnInteraction: true,
                 pauseOnMouseEnter: true,
               }}
               navigation={{

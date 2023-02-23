@@ -43,7 +43,7 @@ export default function Layout() {
       <main>
         <Outlet context={{ services, products, customers }} />
       </main>
-      <Footer />
+      <Footer services={services} products={products} />
     </>
   );
 }
