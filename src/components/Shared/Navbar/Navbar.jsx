@@ -5,11 +5,14 @@ import { Link, useLocation } from 'react-router-dom';
 // components
 import DesktopNavbar from './DesktopNavbar';
 import MobileNavbar from './MobileNavbar';
+import NavbarTop from './NavbarTop';
 
 export default function Navbar({ services, products }) {
   const location = useLocation();
 
   const [url, setUrl] = useState();
+
+  const [isScroll, setIsScroll] = useState(false);
 
   useEffect(() => {
     setUrl(location.pathname);
@@ -45,14 +48,15 @@ export default function Navbar({ services, products }) {
 
   return (
     <>
+      <NavbarTop />
       <nav
         className={
-          'top-0 sticky bg-emerald-500 z-50 w-full flex flex-wrap items-center justify-between navbar-expand-lg text-white transition '
+          'top-0 sticky bg-white z-50 w-full flex flex-wrap items-center justify-between navbar-expand-lg text-black transition duration-500 shadow '
         }
       >
         <div
           ref={navbarRef}
-          className='lg:container lg:px-6 lg:mx-auto flex flex-wrap items-center justify-between py-3 px-4 w-full'
+          className='lg:container lg:px-6 lg:mx-auto flex flex-wrap items-center justify-between py-3 px-4 w-full relative border-b'
         >
           <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
             <Link

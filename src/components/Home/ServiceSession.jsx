@@ -43,7 +43,7 @@ export default function ServiceSession({ services }) {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
             {services ?
               services.map((service, index) => (
-                <div key={service.id} className='w-full text-center min-h-[240px]'>
+                <div key={service._id} className='w-full text-center min-h-[240px]'>
                   <div className='relative flex flex-col min-w-0 break-words w-full shadow-lg rounded-lg h-full group'>
                     <div className='px-4 py-5 flex-auto relative z-3'>
                       <div className='z-2'>

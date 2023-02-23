@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 const NavbarServicesDropdown = ({ url, services }) => {
   return (
     <div className='group relative'>
-      <div className='lg:text-white lg:hover:text-slate-100 text-slate-500 px-4 py-4 lg:py-2 flex items-center gap-2 text-md uppercase font-bold cursor-default select-none'>
+      <div className='font-medium px-4 py-4 lg:py-2 flex items-center text-base rounded-md transition duration-500 group-hover:text-emerald-500 gap-2 cursor-default select-none'>
         Services{' '}
         <i
           className={
-            'fa-regular fa-angle-right transition duration-300 group-hover:rotate-90 rotate-0'
+            'fa-regular fa-angle-right transition duration-300 group-hover:rotate-90 group-hover:text-emerald-500 rotate-0'
           }
         ></i>
       </div>
       <div
         className={
-          'group-hover:block hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg w-[16rem] absolute'
+          'group-hover:left-0 group-hover:opacity-100 group-hover:translate-y-0 -left-[9999px] opacity-0 translate-y-[30px] transition duration-500 bg-white text-base z-50 py-2 text-left rounded shadow border w-[16rem] absolute'
         }
       >
         {services ? (

@@ -10,6 +10,10 @@ import Service from './pages/Service';
 import About from './pages/About';
 
 import 'react-loading-skeleton/dist/skeleton.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import Coverage from './pages/Coverage';
 
 export default function App() {
   return (
@@ -19,9 +23,10 @@ export default function App() {
           {/* add routes with layouts */}
           <Route element={<Layout />}>
             <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
             <Route path='/services/:slug' element={<Service />} />
             <Route path='/products/:slug' element={<Product />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/coverage' element={<Coverage />} />
           </Route>
           <Route
             path='*'

@@ -1,53 +1,33 @@
+import { coverage } from '../../assets/data/coverage';
+
 export default function Coverage() {
   return (
     <>
-      <div className='w-full'>
-        <h2 className='text-2xl font-bold'>Our Coverage</h2>
-        <div className='py-2'>
+      <div className='grid grid-cols-1 md:grid-cols-2 '>
+        <div className='w-full mb-4 md:pr-4'>
           <img
-            className='w-full object-cover'
-            src={require('../../assets/img/Our coverage/our-coverage.jpg')}
+            src={require('../../assets/img/others/' + coverage.nameImg)}
             alt=''
+            className='object-cover w-full h-full'
           />
         </div>
-        <div className='py-2'>
-          <div className='flex items-center gap-2 mb-2'>
-            <div className='font-semibold text-lg text-emerald-500'>
-              Northern Vietnam:
+
+        <div className='w-full md:pl-4'>
+          <h2 className='text-4xl font-bold text-emerald-500 mb-4'>{coverage.title}</h2>
+          {coverage.contents.map((content, index) => (
+            <div key={index} className='pb-2'>
+              <div className='flex items-center gap-2'>
+                <div className='font-bold text-lg '>{content.title}:</div>
+              </div>
+              <ul className='list-item list-disc ml-8'>
+                {content.listAddresses.map((item, i) => (
+                  <li key={i} className='py-2'>
+                    <span className='font-bold'>{item.area}:</span> {item.address}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-          <ul className='list-item list-disc ml-8'>
-            <li className='py-2'>
-              <span className='font-bold'>North East Vietnam:</span> Phu
-              Tho, Thai Nguyen, Tuyen Quang, Ha Giang, Cao Bang, Bac Kan, Lang
-              Son, Bac Giang, Quang Ninh
-            </li>
-            <li className='py-2'>
-              <span className='font-bold'>North West Vietnam:</span> Hoa
-              Binh, Son La, Dien Bien, Lai Chau, Lao Cai, Yen Bai
-            </li>
-            <li className='py-2'>
-              <span className='font-bold'>Red River Delta:</span> Hanoi,
-              Vinh Phuc, Bac Ninh, Hung Yen, Hai Duong, Hai Phong, Thai Binh,
-              Nam Dinh, Ninh Binh, Ha Nam
-            </li>
-          </ul>
-        </div>
-        <div className='py-2'>
-          <div className='flex items-center gap-2 mb-2'>
-            <div className='font-semibold text-lg text-emerald-500'>
-              Central Vietnam:
-            </div>
-          </div>
-          <ul className='list-item list-disc ml-8'>
-            <li className='py-2'>
-              <span className='font-bold'>North Central Coast:</span> Thanh
-              Hoa, Nghe An, Ha Tinh, Quang Binh, Quang Tri, Thua Thien Hue
-            </li>
-            <li className='py-2'>
-              <span className='font-bold'>Central Coast:</span> Da Nang
-            </li>
-          </ul>
+          ))}
         </div>
       </div>
     </>
