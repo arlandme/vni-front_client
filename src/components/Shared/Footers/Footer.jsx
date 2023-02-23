@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import { useEffect, useRef, useState } from 'react';
 
+import './footer.css';
+
 export default function Footer({ services, products }) {
   const contentServicesRef = useRef();
   const contentProductsRef = useRef();
@@ -15,20 +17,32 @@ export default function Footer({ services, products }) {
   const [isCollapseService, setIsCollapseService] = useState(false);
 
   useEffect(() => {
-    if (contentServicesRef) {
+    if (contentServicesRef && contentProductsRef) {
       setHeightProduct(contentProductsRef.current.offsetHeight);
       setHeightService(contentServicesRef.current.offsetHeight);
     }
-  }, [contentServicesRef?.current?.offsetHeight]);
+  }, [contentServicesRef?.current?.offsetHeight, contentProductsRef?.current?.offsetHeight]);
+
+  // useEffect(() => {
+  //   if (window.innerWidth >= 640)
+  //     toggleShowCollapse(false);
+  //   else
+  //     toggleShowCollapse(true);
+  // }, []);
+
+  // const toggleShowCollapse = (status) => {
+  //   setIsCollapseProduct(status);
+  //   setIsCollapseService(status);
+  // }
 
   return (
     <>
-      <footer className='relative bg-slate-700 pt-8 pb-6'>
+      <footer className='relative bg-slate-700 pt-8 pb-6 sm:text-clip'>
         <div className='lg:container mx-auto lg:px-6 px-4'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
-            <div className='flex-1 order-2'>
+          <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+            <div className='order-2'>
               <h3
-                className='font-bold text-lg mb-4 text-white text-center'
+                className='font-bold text-lg mb-4 text-white text-left sm:text-center'
                 onClick={() => setIsCollapseProduct(!isCollapseProduct)}
               >
                 Products{' '}
@@ -39,7 +53,7 @@ export default function Footer({ services, products }) {
                   }
                 ></i>
               </h3>
-              <div className='hidden sm:flex text-sm md:justify-center items-start md:text-center'>
+              <div className='hidden sm:flex text-sm md:justify-center items-start '>
                 <ul className='pr-3'>
                   {products
                     ? products?.map(
@@ -81,7 +95,7 @@ export default function Footer({ services, products }) {
               </div>
               <div
                 className={
-                  'sm:h-0 text-sm text-white text-center transition-all duration-500 '
+                  'sm:h-0 text-sm text-white text-left sm:text-center transition-all duration-500 '
                 }
                 style={{ height: isCollapseProduct ? heightProduct + 'px' : 0 }}
               >
@@ -91,7 +105,7 @@ export default function Footer({ services, products }) {
                     'transition duration-700 ' +
                     (isCollapseProduct
                       ? 'opacity-100 static'
-                      : 'opacity-0 absolute -left-[9999px]')
+                      : 'opacity-0 absolute -left-[9999px] -top-[999px]')
                   }
                 >
                   {products &&
@@ -107,9 +121,9 @@ export default function Footer({ services, products }) {
                 </div>
               </div>
             </div>
-            <div className='flex-1 order-1'>
+            <div className='order-1'>
               <h3
-                className='font-bold text-lg mb-4 text-white text-center'
+                className='font-bold text-lg mb-4 text-white text-left sm:text-center'
                 onClick={() => setIsCollapseService(!isCollapseService)}
               >
                 Services{' '}
@@ -162,7 +176,7 @@ export default function Footer({ services, products }) {
               </div>
               <div
                 className={
-                  'sm:h-0 text-sm text-white text-center transition-all duration-500 '
+                  'sm:h-0 text-sm text-white text-left sm:text-center transition-all duration-500 '
                 }
                 style={{ height: isCollapseService ? heightService + 'px' : 0 }}
               >
@@ -172,7 +186,7 @@ export default function Footer({ services, products }) {
                     'transition duration-700 ' +
                     (isCollapseService
                       ? 'opacity-100 static'
-                      : 'opacity-0 absolute -left-[9999px]')
+                      : 'opacity-0 absolute -left-[9999px] -top-[999px]')
                   }
                 >
                   {services &&
@@ -188,14 +202,16 @@ export default function Footer({ services, products }) {
                 </div>
               </div>
             </div>
-            <div className='flex-1 order-last'>
+            <div className={'order-last grid-merge-2 md:grid-merge-none'}
+              // style={{gridArea: '2 / 1 / 3 / 3'}}
+            >
               <div className='flex flex-wrap items-top mb-6 justify-end'>
                 <div className='w-full'>
                   <h3 className='font-bold text-lg mb-4 text-white text-center'>
                     Contact
                   </h3>
                   <ul className='list-unstyled'>
-                    <li className='text-slate-100 flex items-start gap-2 text-sm font-semibold justify-start'>
+                    <li className='text-slate-100 flex items-start gap-2 text-sm font-normal justify-start'>
                       <i className='fa-solid fa-house py-1'></i>
                       <div>
                         {info.addresses.map((item, index) => (
@@ -205,7 +221,7 @@ export default function Footer({ services, products }) {
                         ))}
                       </div>
                     </li>
-                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold justify-start'>
+                    <li className='text-slate-100 flex items-center gap-2 text-sm font-normal justify-start'>
                       <i className='fa-solid fa-envelope'></i>
                       <a
                         href={'mailto:' + info.email}
@@ -214,7 +230,7 @@ export default function Footer({ services, products }) {
                         {info.email}
                       </a>
                     </li>
-                    <li className='text-slate-100 flex items-center gap-2 text-sm font-semibold justify-start'>
+                    <li className='text-slate-100 flex items-center gap-2 text-sm font-normal justify-start'>
                       <i className='fa-solid fa-phone'></i>
                       <a
                         href={'tel:' + info.phone}

@@ -50,7 +50,7 @@ export default function DesktopNavbar({ url, services, products }) {
               }
               to={'/about'}
             >
-              About us
+              Us
             </Link>
           </li>
           <li className='flex items-center'>

@@ -65,7 +65,7 @@ export const why = {
 // Thêm 1 đoạn văn cần để dấu "," sau đoạn phía trước, sau đó viết đoạn văn mới đưa vào dấu '' hoặc ""
 export const about = {
   title: 'About InsQuality',
-  nameImg: 'about-bg.PNG',
+  nameImg: 'about-bg.jpg',
   // Thêm đoạn văn ở đây
   contents: [
     'Established in the context of the global economic crisis, InsQuality understands the difficulties in sales of customers and the delay in mass production of factories. We were born with the mission to help customers’ sales go smoothly as well as strictly and systematically control product quality based on objectivity, transparency and accuracy.',
