@@ -16,7 +16,7 @@ export default function CustomerSession({ customers }) {
       <section className='pb-20 bg-slate-100 z-2'>
         <div className='lg:container lg:mx-auto lg:px-6 px-4'>
           <h2 className='uppercase text-4xl text-center font-bold py-8 text-emerald-500/90 '>
-            Customers <br className='sm:hidden' /> Who Trust Us
+            Customers Our Partners <br className='sm:hidden' />
           </h2>
           <div className='relative'>
             <Swiper
