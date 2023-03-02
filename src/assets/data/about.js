@@ -50,7 +50,7 @@ export const why = {
         'To be qualified with ISO 17020:2012 & ISO 9001:2015 and specialize in Hardline, Softline and Electrical & Electronics.',
     },
     {
-      title: 'Good & Good',
+      title: 'Wholehearted Services',
       content:
         'Working professionally, precisely and swiftly is a mandatory element for sustainable development. To win customers’ satisfaction, we have not only the best services but also the best price.',
     },
