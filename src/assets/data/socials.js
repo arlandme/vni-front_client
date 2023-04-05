@@ -8,11 +8,6 @@ export const socials = [
     nameImg: 'iphone.png',
   },
   {
-    name: 'Facebook',
-    link: 'https://www.facebook.com/profile.php?id=100086861351190',
-    nameImg: 'facebook.png',
-  },
-  {
     name: 'Instagram',
     link: 'https://instagram.com/defectfound',
     nameImg: 'instagram.png',
@@ -33,10 +28,5 @@ export const socials = [
     name: 'Twitter',
     link: 'https://twitter.com/defect_found',
     nameImg: 'twitter.png',
-  },
-  {
-    name: 'LinkedIn',
-    link: 'https://www.linkedin.com/company/vietnam-inspection-service-team/',
-    nameImg: 'linkedin.png',
   },
 ]
