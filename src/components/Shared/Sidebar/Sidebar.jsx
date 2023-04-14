@@ -2,14 +2,14 @@ import { useRef, useState } from 'react';
 import { sendMail } from '../../../services/email';
 import { capitalize } from '../../../utils/formatString';
 import { informationValidator } from '../../../utils/validation';
-import Toast from '../Toasts/Toast';
 import SuggestLink from '../Suggests/SuggestLink';
 import { info } from '../../../assets/data/info';
+import ThankToast from '../Toasts/ThankToast';
 
 export default function Sidebar({ products, services, data }) {
   const [messages, setMessages] = useState([]);
   const [showToast, setShowToast] = useState(false);
-  const [toastStatus, setToastStatus] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(true);
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -50,31 +50,23 @@ export default function Sidebar({ products, services, data }) {
         .then((res) => {
           if (res.status === 200) {
             setIsLoading(false);
-            setToastStatus(true);
-            handleShowToast();
+            setIsSuccess(true);
+            setShowToast(true);
           }
         })
         .catch((err) => {
           setIsLoading(false);
-          setToastStatus(false);
-          handleShowToast();
+          setIsSuccess(false);
         });
     }
   };
 
-  const handleShowToast = () => {
-    setShowToast(true);
-    setTimeout(() => {
-      setShowToast(false);
-    }, 3500);
-  };
-
   return (
     <>
-      <Toast
-        showToast={showToast}
-        setShowToast={setShowToast}
-        toastStatus={toastStatus}
+      <ThankToast
+        openToast={showToast}
+        setOpenToast={setShowToast}
+        isSuccess={isSuccess}
       />
       <div className='lg:pl-4 lg:w-1/3 w-full border-t pt-4 lg:border-t-0 lg:pt-0 mb-8'>
         <div className='text-center text-slate-500'>
@@ -231,7 +223,8 @@ export default function Sidebar({ products, services, data }) {
                     fill='currentColor'
                     d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
                   ></path>
-                </svg> Sending...
+                </svg>{' '}
+                Sending...
               </button>
             )}
           </form>
