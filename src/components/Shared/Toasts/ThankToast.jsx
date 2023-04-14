@@ -47,7 +47,7 @@ export default function ThankToast({
                 THANK YOU SO MUCH
               </h1>
               <div className='text-black font-medium text-xl text-center py-2'>
-                HandiPassion will respond to you soon.
+                InsQuality will respond to you soon.
               </div>
             </div>
           </div>
