@@ -17,9 +17,14 @@ export const coverage = {
           area: 'Red River Delta',
           address: 'Hanoi, Vinh Phuc, Bac Ninh, Hung Yen, Hai Duong, Hai Phong, Thai Binh, Nam Dinh, Ninh Binh, Ha Nam',
         },
+      ]
+    },
+    {
+      title: 'Vietnam Central',
+      listAddresses: [
         {
           area: 'North Central Coast',
-          address: 'Thanh Hoa, Nghe An, Ha Tinh, Quang Binh, Quang Tri e Thua Thien Hue',
+          address: 'Thanh Hoa, Nghe An, Ha Tinh, Quang Binh, Quang Tri, Thua Thien Hue',
         },
         {
           area: 'Central Coast',
@@ -29,6 +34,11 @@ export const coverage = {
           area: 'Central Highlands',
           address: 'Kon Tum, Gia Lai, Dak Lak, Dak Nong, Lam Dong',
         },
+      ]
+    },
+    {
+      title: 'Southern Vietnam',
+      listAddresses: [
         {
           area: 'South East',
           address: 'Binh Phuoc, Binh Duong, Dong Nai, Tay Ninh, Ba Ria Vung Tau, Ho Chi Minh',
@@ -39,18 +49,5 @@ export const coverage = {
         },
       ]
     },
-    // {
-    //   title: 'Central Vietnam',
-    //   listAddresses: [
-    //     {
-    //       area: 'North Central Coast',
-    //       address: 'Thanh Hoa, Nghe An, Ha Tinh, Quang Binh, Quang Tri, Thua Thien Hue',
-    //     },
-    //     {
-    //       area: 'Central Coast',
-    //       address: 'Da Nang',
-    //     },
-    //   ]
-    // },
   ]
 }
