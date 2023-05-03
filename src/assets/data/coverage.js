@@ -11,7 +11,7 @@ export const coverage = {
         },
         {
           area: 'North West Vietnam',
-          address: 'Hoa Binh, Son La, Dien Bien, Lai Chai, Lao Cai, Yen Bai',
+          address: 'Hoa Binh, Son La, Dien Bien, Lai Chau, Lao Cai, Yen Bai',
         },
         {
           area: 'Red River Delta',
@@ -44,7 +44,7 @@ export const coverage = {
           address: 'Binh Phuoc, Binh Duong, Dong Nai, Tay Ninh, Ba Ria Vung Tau, Ho Chi Minh',
         },
         {
-          area: 'Mekong Delt',
+          area: 'Mekong Delta',
           address: 'Long An, Tien Giang, Ben tre, Vinh Long, Tra Vinh, Dong Thap, Hau Giang, Soc Trang, An Giang, Kien Giang, Bac Lieu, Ca Mau, Can Tho',
         },
       ]
