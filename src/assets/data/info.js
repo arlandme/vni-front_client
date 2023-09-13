@@ -4,5 +4,6 @@ export const info = {
     // 'Hung Yen: No. 5, Phu Lam hamlet, An Vi commune, Khoai Chau district, Hung Yen province, Vietnam',
   ],
   email: 'info@defectfound.com',
-  phone: '+84 369 134 901',
+  phone: '+84 979 702 787',
+  phone_number: '0979702787'
 }
