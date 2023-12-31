@@ -235,7 +235,7 @@ export default function Footer({ services, products }) {
                     <li className='text-slate-100 flex items-center text-sm font-normal justify-start'>
                       <i className='fa-solid fa-phone mr-2'></i>
                       <a
-                        href={'tel:' + info.phone}
+                        href={'tel:' + info.phone_number}
                         className='hover:text-slate-200 hover:underline py-2'
                       >
                         {info.phone}

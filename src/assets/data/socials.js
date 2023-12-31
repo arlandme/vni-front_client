@@ -1,10 +1,12 @@
 // Số điện thoại thì cần có "tel:" đằng trước
 // Email thì có "mailto:" đằng trước
 
+import { info } from './info';
+
 export const socials = [
   {
     name: 'Telephone',
-    link: 'tel:0369134901',
+    link: `tel:${info.phone_number}`,
     nameImg: 'iphone.png',
   },
   {
@@ -22,7 +24,7 @@ export const socials = [
     name: 'WhatsApp',
     link: 'https://www.whatsapp.com/',
     nameImg: 'whatsapp.png',
-    title: '0369134901',
+    title: `${info.phone_number}`,
   },
   {
     name: 'Twitter',
