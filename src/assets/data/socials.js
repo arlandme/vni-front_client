@@ -12,12 +12,12 @@ export const socials = [
     link: 'https://instagram.com/defectfound',
     nameImg: 'instagram.png',
   },
-  {
-    name: 'Wechat',
-    link: 'https://www.wechat.com/',
-    nameImg: 'wechat.png',
-    title: 'ID: insquality',
-  },
+  // {
+  //   name: 'Wechat',
+  //   link: 'https://www.wechat.com/',
+  //   nameImg: 'wechat.png',
+  //   title: 'ID: insquality',
+  // },
   {
     name: 'WhatsApp',
     link: 'https://www.whatsapp.com/',
